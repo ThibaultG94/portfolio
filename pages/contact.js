@@ -1,13 +1,13 @@
 import React from 'react';
 import Meta from '../components/Meta';
 
-const index = () => {
+const contact = () => {
 	return (
 		<div>
 			<Meta />
-			<h1>HOME</h1>
+			<h1>CONTACT</h1>
 		</div>
 	);
 };
 
-export default index;
+export default contact;
