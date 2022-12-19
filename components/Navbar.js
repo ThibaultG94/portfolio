@@ -20,10 +20,10 @@ const Navbar = () => {
 					</Link>
 				</li>
 				<li>
-					<Link legacyBehavior href="/projects">
+					<Link legacyBehavior href="/portfolio">
 						<a
 							className={
-								router.pathname == '/projects'
+								router.pathname == '/portfolio'
 									? 'active nav-link'
 									: 'nav-link'
 							}>
