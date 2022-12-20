@@ -1,4 +1,14 @@
 @font-face {
+	font-family: 'font-1';
+	src: url(../public/assets/fonts/Questrial-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'font-2';
+	src: url(../public/assets/fonts/Michroma-Regular.ttf);
+}
+
+@font-face {
 	font-family: 'Source Sans Pro';
 	font-style: normal;
 	font-weight: 400;
@@ -10,19 +20,27 @@
 			format('truetype');
 }
 
+$font-1: 'font-1', sans-serif;
+$font-2: 'font-2', serif;
+$font-3: 'Source Sans Pro', sans-serif;
+
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: $font-3;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+}
+
+html {
+	scroll-behavior: unset;
 }
 
 body {
 	background: #fcfcfc;
-}
-
-h1 {
-	text-align: center;
-	text-transform: uppercase;
+	height: 100vh;
+	overflow: hidden;
 }
 
 li {

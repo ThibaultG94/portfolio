@@ -1,11 +1,19 @@
 import React from 'react';
+import DynamicText from '../components/DynamicText';
 import Meta from '../components/Meta';
 
 const index = () => {
 	return (
-		<div>
+		<div className="home">
 			<Meta />
-			<h1>HOME</h1>
+			<div className="home-main">
+				<div className="main-content">
+					<h1>DEVELOPPEUR WEB</h1>
+					<h2>
+						<DynamicText />
+					</h2>
+				</div>
+			</div>
 		</div>
 	);
 };
