@@ -7,16 +7,43 @@ import { projects } from '../../projectsData';
 const project = ({ project }) => {
 	return (
 		<div className="project">
-			<h1>{project.title}</h1>
-			<span>{project.date}</span>
-			<p>{project.infos}</p>
-			<Image
-				src={path + project.img}
-				alt={project.title}
-				width={400}
-				height={250}
-			/>
-			<Link href="/portfolio">Revenir au projet</Link>
+			<div className="project-main">
+				<div className="project-content">
+					<h1>{project.title}</h1>
+					<p>{project.date}</p>
+					<ul className="languages">
+						{project.languages.map((item) => (
+							<li key={item}>{item}</li>
+						))}
+					</ul>
+				</div>
+				<div className="img-content">
+					<div className="img-container hover">
+						<span>
+							<h3></h3>
+							<p>{project.infos}</p>
+						</span>
+						<Image
+							src={path + project.img}
+							alt={project.title}
+							width={600}
+							height={375}
+						/>
+					</div>
+					<div className="button-container">
+						<a
+							href={project.link}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover">
+							<span className="button">voir le site</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<Link href="/portfolio">
+				<span className="button back">Revenir au projets</span>
+			</Link>
 			<Buttons
 				left={project.id === 1 ? '/' : '/projects/' + (project.id - 1)}
 				right={
