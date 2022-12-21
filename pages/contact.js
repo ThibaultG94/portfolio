@@ -1,12 +1,13 @@
 import React from 'react';
 import Buttons from '../components/Buttons';
+import ContactForm from '../components/ContactForm';
 import Meta from '../components/Meta';
 
 const contact = () => {
 	return (
-		<div>
+		<div className="contact">
 			<Meta />
-			<h1>CONTACT</h1>
+			<ContactForm />
 			<Buttons left={'/projects/4'} />
 		</div>
 	);
