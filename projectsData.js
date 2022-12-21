@@ -1,6 +1,6 @@
 export const projects = [
 	{
-		id: 5,
+		id: 6,
 		title: 'Montagne',
 		date: 'Juillet 2022',
 		languages: ['Sass', 'HTML5'],
@@ -9,7 +9,7 @@ export const projects = [
 		link: 'https://thibaultg94.github.io/Projet_1/',
 	},
 	{
-		id: 4,
+		id: 5,
 		title: 'Le Resto',
 		date: 'Août 2022',
 		languages: ['Sass', 'HTML5'],
@@ -43,5 +43,23 @@ export const projects = [
 		infos: 'API recensant les pays du monde. On peut faire une recherche pour trouver un pays, trier les pays par population ou par ordre alphabétique',
 		img: '/assets/img/projet-5.jpg',
 		link: 'https://thibaultg94.github.io/Projet_5/',
+	},
+	{
+		id: 4,
+		title: 'Password Generator',
+		date: 'Septembre 2022',
+		languages: ['CSS', 'HTML5', 'JavaScript'],
+		infos: 'Générateur de mot de passes',
+		img: '/assets/img/projet-6.jpg',
+		link: 'https://thibaultg94.github.io/Projet_6/',
+	},
+	{
+		id: 7,
+		title: 'ToDo List',
+		date: 'Septembre 2022',
+		languages: ['CSS', 'JavaScript', 'HTML5'],
+		infos: 'ToDo List',
+		img: '/assets/img/projet-7.jpg',
+		link: 'https://thibaultg94.github.io/Projet_7/',
 	},
 ];
