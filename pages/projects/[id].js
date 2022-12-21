@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Buttons from '../../components/Buttons';
 import { path } from '../../config';
 import { projects } from '../../projectsData';
 
@@ -16,6 +17,14 @@ const project = ({ project }) => {
 				height={250}
 			/>
 			<Link href="/portfolio">Revenir au projet</Link>
+			<Buttons
+				left={project.id === 1 ? '/' : '/projects/' + (project.id - 1)}
+				right={
+					project.id === 4
+						? '/contact'
+						: '/projects/' + (project.id + 1)
+				}
+			/>
 		</div>
 	);
 };
