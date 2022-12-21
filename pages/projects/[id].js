@@ -31,13 +31,19 @@ const project = ({ project }) => {
 						/>
 					</div>
 					<div className="button-container">
-						<a
+						{/* <a
+							href={project.link}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover"> */}
+						<Link
 							href={project.link}
 							target="_blank"
 							rel="noopener noreferrer"
 							className="hover">
 							<span className="button">voir le site</span>
-						</a>
+						</Link>
+						{/* </a> */}
 					</div>
 				</div>
 			</div>
