@@ -1,5 +1,5 @@
 .home {
-	height: 100vh;
+	height: 80vh;
 	width: 100vw;
 	position: absolute;
 }
@@ -8,12 +8,23 @@
 	display: grid;
 	align-items: center;
 	justify-items: center;
-	height: 95%;
+	height: 100%;
 
 	.main-content {
 		user-select: none;
 
 		h1 {
+			font-size: 3.2rem;
+			position: relative;
+			font-family: $font-3;
+			letter-spacing: 3px;
+
+			@media screen and (max-width: 650px) {
+				font-size: 2rem;
+			}
+		}
+
+		h2 {
 			font-size: 3.7rem;
 			position: relative;
 			font-family: $font-2;
@@ -23,7 +34,7 @@
 			}
 		}
 
-		h2 {
+		h3 {
 			font-size: 4.2rem;
 			font-weight: 100;
 

@@ -9,10 +9,11 @@ const index = () => {
 			<Meta />
 			<div className="home-main">
 				<div className="main-content">
-					<h1>DEVELOPPEUR WEB</h1>
-					<h2>
+					<h1>THIBAULT GUILHEM</h1>
+					<h2>DEVELOPPEUR WEB</h2>
+					<h3>
 						<DynamicText />
-					</h2>
+					</h3>
 				</div>
 			</div>
 			<Buttons right={'/projects/1'} />
