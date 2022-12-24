@@ -1,8 +1,7 @@
 .scroll-bottom {
 	a {
 		position: absolute;
-		transform: translate(-50%, -50%);
-		top: 50%;
+		top: 35vh;
 		font-size: 3rem;
 		color: rgb(184, 183, 183);
 		transition: 0.25s;
@@ -15,13 +14,15 @@
 	}
 
 	.left {
-		left: 50px;
+		left: 10px;
+		animation: buttonLeftAnim 1s cubic-bezier(0.11, 0, 0.5, 0) 500ms 1
+			normal forwards;
 	}
 
 	.right {
-		right: 50px;
-		animation: buttonRightAnim 1s cubic-bezier(0.11, 0, 0.5, 0) 1s 1 normal
-			forwards;
+		right: 10px;
+		animation: buttonRightAnim 1s cubic-bezier(0.11, 0, 0.5, 0) 500ms 1
+			normal forwards;
 	}
 }
 
@@ -54,6 +55,53 @@
 	93% {
 		animation-timing-function: ease-in;
 		transform: translateX(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes buttonLeftAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(-48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(-26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(-13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(-6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(-4px);
 	}
 
 	25%,
