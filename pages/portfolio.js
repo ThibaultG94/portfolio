@@ -17,17 +17,17 @@ const portfolio = () => {
 				<ul className="portfolio-container">
 					{projects.map((project) => (
 						<li key={project.id} className="portfolio-content">
-							<h3>
+							{/* <h3>
 								{project.title} <span>➡️</span>
-							</h3>
+							</h3> */}
 							<Link
 								href="/projects/[id]"
 								as={'projects/' + project.id}>
 								<Image
 									src={path + project.img}
 									alt={project.title}
-									width={240}
-									height={150}
+									width={341}
+									height={192}
 								/>
 							</Link>
 						</li>

@@ -23,33 +23,30 @@ const project = ({ project }) => {
 							<h3></h3>
 							<p>{project.infos}</p>
 						</span>
-						<Image
-							src={path + project.img}
-							alt={project.title}
-							width={600}
-							height={375}
-						/>
-					</div>
-					<div className="button-container">
-						{/* <a
-							href={project.link}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="hover"> */}
 						<Link
 							href={project.link}
 							target="_blank"
 							rel="noopener noreferrer"
 							className="hover">
-							<span className="button">voir le site</span>
+							<Image
+								src={path + project.img}
+								alt={project.title}
+								width={683}
+								height={384}
+							/>
 						</Link>
-						{/* </a> */}
+					</div>
+					<div className="button-container">
+						<Link
+							href={project.github}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover">
+							<span className="button">voir le code</span>
+						</Link>
 					</div>
 				</div>
 			</div>
-			<Link href="/portfolio">
-				<span className="button back">Revenir au projets</span>
-			</Link>
 			<Buttons
 				left={project.id === 1 ? '/' : '/projects/' + (project.id - 1)}
 				right={
