@@ -28,6 +28,7 @@ $color-1: #fafeff;
 $color-2: #00c1ec;
 $color-3: #e7f7fe;
 $color-4: rgb(141, 141, 141);
+$color-5: rgb(235, 244, 242);
 $black: rgb(40, 40, 40);
 $red: rgb(253, 87, 87);
 
@@ -48,7 +49,8 @@ html {
 }
 
 body {
-	background: #fcfcfc;
+	// background: #fcfcfc;
+	background: $color-5;
 	height: 100vh;
 	overflow-x: hidden;
 }
