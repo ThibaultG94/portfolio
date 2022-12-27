@@ -8,6 +8,7 @@ const ContactForm = () => {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
+		console.log(process.env);
 		const formMessage = document.querySelector('.form-message');
 
 		emailjs
@@ -15,7 +16,7 @@ const ContactForm = () => {
 				'service_adfkhc8',
 				'template_96ais68',
 				form.current,
-				process.env.REACT_APP_ID
+				process.env.NEXT_PUBLIC_REACT_APP_IDz
 			)
 			.then(
 				(result) => {
@@ -41,35 +42,35 @@ const ContactForm = () => {
 	};
 	return (
 		<div className="form-container">
-			<h2>Me contacter</h2>
 			<form className="form-content" ref={form} onSubmit={sendEmail}>
-				{/* <div className="name-container"> */}
-				<label>Nom</label>
-				<input
-					type="text"
-					name="name"
-					required
-					autoComplete="off"
-					id="name"
-				/>
-				{/* </div> */}
-				{/* <div className="email-container"> */}
-				<label>Email</label>
-				<input
-					type="email"
-					name="email"
-					required
-					autoComplete="off"
-					id="email"
-				/>
-				{/* </div> */}
-				{/* <div className="message-container"> */}
-				<label>Message</label>
-				<textarea name="message" id="mess" />
-				{/* </div> */}
+				<h2>Me contacter</h2>
+				<div className="name-container">
+					<label>Nom</label>
+					<input
+						type="text"
+						name="name"
+						required
+						autoComplete="off"
+						id="name"
+					/>
+				</div>
+				<div className="email-container">
+					<label>Email</label>
+					<input
+						type="email"
+						name="email"
+						required
+						autoComplete="off"
+						id="email"
+					/>
+				</div>
+				<div className="message-container">
+					<label>Message</label>
+					<textarea name="message" id="mess" />
+				</div>
 				<input type="submit" value="Envoyer" className="hover button" />
 			</form>
-			<div className="formMessage"></div>
+			<div className="form-message"></div>
 		</div>
 	);
 };
