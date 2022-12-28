@@ -28,6 +28,34 @@ const ArrowKey = (props) => {
 					router.push('/projects/3');
 					router.asPath = '/projects/3';
 					break;
+				case '/projects/5':
+					router.push('/projects/4');
+					router.asPath = '/projects/4';
+					break;
+				case '/projects/6':
+					router.push('/projects/5');
+					router.asPath = '/projects/5';
+					break;
+				case '/projects/7':
+					router.push('/projects/6');
+					router.asPath = '/projects/6';
+					break;
+				case '/projects/8':
+					router.push('/projects/7');
+					router.asPath = '/projects/7';
+					break;
+				case '/projects/9':
+					router.push('/projects/8');
+					router.asPath = '/projects/8';
+					break;
+				case '/projects/10':
+					router.push('/projects/9');
+					router.asPath = '/projects/9';
+					break;
+				case '/projects/11':
+					router.push('/projects/10');
+					router.asPath = '/projects/10';
+					break;
 				case '/contact':
 					router.push('/projects/4');
 					router.asPath = '/projects/4';
@@ -58,6 +86,34 @@ const ArrowKey = (props) => {
 					router.asPath = '/projects/4';
 					break;
 				case '/projects/4':
+					router.push('/contact');
+					router.asPath = '/contact';
+					break;
+				case '/projects/5':
+					router.push('/projects/6');
+					router.asPath = '/projects/6';
+					break;
+				case '/projects/6':
+					router.push('/projects/7');
+					router.asPath = '/projects/7';
+					break;
+				case '/projects/7':
+					router.push('/projects/8');
+					router.asPath = '/projects/8';
+					break;
+				case '/projects/8':
+					router.push('/projects/9');
+					router.asPath = '/projects/9';
+					break;
+				case '/projects/9':
+					router.push('/projects/10');
+					router.asPath = '/projects/10';
+					break;
+				case '/projects/10':
+					router.push('/projects/11');
+					router.asPath = '/projects/11';
+					break;
+				case '/projects/11':
 					router.push('/contact');
 					router.asPath = '/contact';
 					break;
