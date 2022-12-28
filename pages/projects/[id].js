@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import ArrowKey from '../../components/ArrowKey';
 import Buttons from '../../components/Buttons';
 import { path } from '../../config';
 import { projects } from '../../projectsData';
@@ -54,7 +55,9 @@ const project = ({ project }) => {
 						? '/contact'
 						: '/projects/' + (project.id + 1)
 				}
+				projectId={project.id}
 			/>
+			<ArrowKey />
 		</div>
 	);
 };

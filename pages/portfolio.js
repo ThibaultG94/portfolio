@@ -4,6 +4,7 @@ import React from 'react';
 import Meta from '../components/Meta';
 import { projects } from '../projectsData';
 import { path } from '../config';
+import ArrowKey from '../components/ArrowKey';
 
 const portfolio = () => {
 	return (
@@ -34,6 +35,7 @@ const portfolio = () => {
 					))}
 				</ul>
 			</div>
+			<ArrowKey />
 		</div>
 	);
 };

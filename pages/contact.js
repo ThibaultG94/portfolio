@@ -1,4 +1,5 @@
 import React from 'react';
+import ArrowKey from '../components/ArrowKey';
 import Buttons from '../components/Buttons';
 import ContactForm from '../components/ContactForm';
 import Meta from '../components/Meta';
@@ -9,6 +10,7 @@ const contact = () => {
 			<Meta />
 			<ContactForm />
 			<Buttons left={'/projects/4'} />
+			<ArrowKey />
 		</div>
 	);
 };
