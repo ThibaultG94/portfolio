@@ -9,7 +9,7 @@ const contact = () => {
 		<div className="contact">
 			<Meta />
 			<ContactForm />
-			<Buttons left={'/projects/4'} />
+			<Buttons left={'/portfolio'} />
 			<ArrowKey />
 		</div>
 	);

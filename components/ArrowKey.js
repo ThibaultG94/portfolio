@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 const ArrowKey = (props) => {
 	let router = useRouter();
@@ -7,10 +7,6 @@ const ArrowKey = (props) => {
 		if (e.key === 'ArrowLeft') {
 			switch (router.asPath) {
 				case '/':
-					break;
-				case '/portfolio':
-					router.push('/');
-					router.asPath = '/';
 					break;
 				case '/projects/1':
 					router.push('/');
@@ -28,9 +24,13 @@ const ArrowKey = (props) => {
 					router.push('/projects/3');
 					router.asPath = '/projects/3';
 					break;
+				case '/portfolio':
+					router.push('/');
+					router.asPath = '/';
+					break;
 				case '/projects/5':
-					router.push('/projects/4');
-					router.asPath = '/projects/4';
+					router.push('/portfolio');
+					router.asPath = '/portfolio';
 					break;
 				case '/projects/6':
 					router.push('/projects/5');
@@ -57,8 +57,8 @@ const ArrowKey = (props) => {
 					router.asPath = '/projects/10';
 					break;
 				case '/contact':
-					router.push('/projects/4');
-					router.asPath = '/projects/4';
+					router.push('/portfolio');
+					router.asPath = '/portfolio';
 					break;
 				default:
 					break;
@@ -66,12 +66,13 @@ const ArrowKey = (props) => {
 		} else if (e.key === 'ArrowRight') {
 			switch (router.asPath) {
 				case '/':
-					router.push('/projects/1');
-					router.asPath = '/projects/1';
-					break;
-				case '/portfolio':
-					router.push('/contact');
-					router.asPath = '/contact';
+					if (localStorage.projects == 'true') {
+						router.push('/portfolio');
+						router.asPath = '/portfolio';
+					} else {
+						router.push('/projects/1');
+						router.asPath = '/projects/1';
+					}
 					break;
 				case '/projects/1':
 					router.push('/projects/2');
@@ -86,6 +87,10 @@ const ArrowKey = (props) => {
 					router.asPath = '/projects/4';
 					break;
 				case '/projects/4':
+					router.push('/portfolio');
+					router.asPath = '/portfolio';
+					break;
+				case '/portfolio':
 					router.push('/contact');
 					router.asPath = '/contact';
 					break;

@@ -1,5 +1,15 @@
 .portfolio {
 	text-align: center;
+	position: relative;
+
+	h1 {
+		font-family: $font-4;
+		font-weight: 100;
+		text-transform: uppercase;
+		padding-top: 40px;
+		font-size: 3.3rem;
+		letter-spacing: 3px;
+	}
 }
 
 .portfolio-container {
@@ -7,9 +17,24 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 30px;
+	padding: 0 10vw;
 }
 
 .portfolio-content {
-	width: 330px;
+	width: 260px;
 	height: 190px;
+	overflow-x: hidden;
+	position: relative;
+	transition: transform 0.3s ease;
+
+	img {
+		position: absolute;
+		left: -17%;
+	}
+
+	&:hover {
+		z-index: 1;
+		transform: scale(1.1);
+		overflow-x: visible;
+	}
 }

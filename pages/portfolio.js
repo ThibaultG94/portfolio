@@ -1,12 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Meta from '../components/Meta';
 import { projects } from '../projectsData';
 import { path } from '../config';
 import ArrowKey from '../components/ArrowKey';
+import Buttons from '../components/Buttons';
 
 const portfolio = () => {
+	useEffect(() => {
+		localStorage.projects = true;
+	}, []);
 	return (
 		<div className="portfolio">
 			<Meta
@@ -14,7 +18,7 @@ const portfolio = () => {
 				description={'Tous les projets dev mis en ligne'}
 			/>
 			<div className="porfolio-main">
-				<h1>PROJETS</h1>
+				<h1>Tout mes Projets</h1>
 				<ul className="portfolio-container">
 					{projects.map((project) => (
 						<li key={project.id} className="portfolio-content">
@@ -35,6 +39,7 @@ const portfolio = () => {
 					))}
 				</ul>
 			</div>
+			<Buttons left={'/projects/4'} right={'/contact'} />
 			<ArrowKey />
 		</div>
 	);

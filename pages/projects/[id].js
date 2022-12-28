@@ -52,7 +52,7 @@ const project = ({ project }) => {
 				left={project.id === 1 ? '/' : '/projects/' + (project.id - 1)}
 				right={
 					project.id === 4
-						? '/contact'
+						? '/portfolio'
 						: '/projects/' + (project.id + 1)
 				}
 				projectId={project.id}
