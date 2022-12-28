@@ -16,7 +16,7 @@ const ContactForm = () => {
 				'service_adfkhc8',
 				'template_96ais68',
 				form.current,
-				process.env.NEXT_PUBLIC_REACT_APP_IDz
+				process.env.NEXT_PUBLIC_REACT_APP_ID
 			)
 			.then(
 				(result) => {
