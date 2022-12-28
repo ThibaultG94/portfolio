@@ -22,9 +22,9 @@ const portfolio = () => {
 				<ul className="portfolio-container">
 					{projects.map((project) => (
 						<li key={project.id} className="portfolio-content">
-							{/* <h3>
-								{project.title} <span>➡️</span>
-							</h3> */}
+							<span>
+								<h3>{project.title}</h3>
+							</span>
 							<Link
 								href="/projects/[id]"
 								as={'projects/' + project.id}>
