@@ -18,7 +18,7 @@ const portfolio = () => {
 				description={'Tous les projets dev mis en ligne'}
 			/>
 			<div className="porfolio-main">
-				<h1>Tout mes Projets</h1>
+				<h1>Mon Portfolio</h1>
 				<ul className="portfolio-container">
 					{projects.map((project) => (
 						<li key={project.id} className="portfolio-content">
