@@ -2,19 +2,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ArrowKey from '../../components/ArrowKey';
 import Buttons from '../../components/Buttons';
+import Meta from '../../components/Meta';
 import { path } from '../../config';
 import { projects } from '../../projectsData';
 
 const project = ({ project }) => {
 	return (
 		<div className="project">
+			<Meta />
 			<div className="project-main">
 				<div className="project-content">
 					<h1>{project.title}</h1>
 					<p>{project.date}</p>
-					<ul className="languages">
+					<ul className="langages">
 						{project.languages.map((item) => (
-							<li key={item}>{item}</li>
+							// <li key={item}>{item}</li>
+							<img src={item} alt="langage" key={item} />
 						))}
 					</ul>
 				</div>
@@ -43,7 +46,10 @@ const project = ({ project }) => {
 							target="_blank"
 							rel="noopener noreferrer"
 							className="hover">
-							<span className="button">voir le code</span>
+							<span className="button">
+								voir le code source
+								<i className="fa-brands fa-github"></i>
+							</span>
 						</Link>
 					</div>
 				</div>
