@@ -24,3 +24,30 @@
 .active {
 	background: #e8e8e8;
 }
+
+.toggle-btn {
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+	position: relative;
+
+	& span {
+		width: 40px;
+		height: 5px;
+		border-radius: 3px;
+		display: block;
+		margin-top: 6px;
+		transition: 0.3s ease;
+		background: $color-4;
+	}
+}
+
+.toggle-menu {
+	display: none;
+	position: absolute;
+}
+
+.toggle {
+	display: block;
+}
