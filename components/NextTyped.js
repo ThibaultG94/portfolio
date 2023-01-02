@@ -9,7 +9,7 @@ const NextTyped = () => {
 		const options = {
 			strings: [
 				"Bonjour à tous et à toutes, je me présente je m'appelle Thibault",
-				"Après une carrière m'ayant fait découvrir plusieurs milieux professionnels et exercer des métiers différents, j'ai décidé de me lancer à fond dans l'apprentissage du code, depuis près de 6 mois je me forme à temps plein en autodidacte aux langages Front tels que CSS, JavaScript et son Framework React afin de devenir le plus rapidement possible développeur. Plus qu'un avenir professionnel, je me suis découvert une passion, celle de coder.",
+				"Après une carrière m'ayant fait découvrir plusieurs milieux professionnels et exercer des métiers différents, j'ai décidé de me lancer à fond dans l'apprentissage du code. epuis près de 6 mois je me forme à temps plein en autodidacte aux langages Front tels que CSS, JavaScript et son Framework React afin de devenir le plus rapidement possible développeur. Plus qu'un avenir professionnel, je me suis découvert une passion, celle de coder.",
 			],
 			typeSpeed: 20,
 			backSpeed: 0,

@@ -8,9 +8,13 @@ const ArrowKey = (props) => {
 			switch (router.asPath) {
 				case '/':
 					break;
-				case '/projects/1':
+				case '/about':
 					router.push('/');
 					router.asPath = '/';
+					break;
+				case '/projects/1':
+					router.push('/about');
+					router.asPath = '/about';
 					break;
 				case '/projects/2':
 					router.push('/projects/1');
@@ -25,8 +29,8 @@ const ArrowKey = (props) => {
 					router.asPath = '/projects/3';
 					break;
 				case '/portfolio':
-					router.push('/');
-					router.asPath = '/';
+					router.push('/about');
+					router.asPath = '/about';
 					break;
 				case '/projects/5':
 					router.push('/portfolio');
@@ -66,6 +70,10 @@ const ArrowKey = (props) => {
 		} else if (e.key === 'ArrowRight') {
 			switch (router.asPath) {
 				case '/':
+					router.push('/about');
+					router.asPath = '/about';
+					break;
+				case '/about':
 					if (localStorage.projects == 'true') {
 						router.push('/portfolio');
 						router.asPath = '/portfolio';

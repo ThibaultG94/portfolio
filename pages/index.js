@@ -30,7 +30,7 @@ const index = () => {
 					</div>
 				</div>
 			</div>
-			<Buttons right={'/projects/1'} />
+			<Buttons right={'/about'} />
 			<ArrowKey />
 		</div>
 	);

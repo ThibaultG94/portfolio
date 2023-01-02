@@ -20,6 +20,18 @@ const Navbar = () => {
 					</Link>
 				</li>
 				<li>
+					<Link legacyBehavior href="/about">
+						<a
+							className={
+								router.pathname == '/about'
+									? 'active nav-link'
+									: 'nav-link'
+							}>
+							À propos
+						</a>
+					</Link>
+				</li>
+				<li>
 					<Link legacyBehavior href="/portfolio">
 						<a
 							className={
@@ -27,7 +39,7 @@ const Navbar = () => {
 									? 'active nav-link'
 									: 'nav-link'
 							}>
-							Projets
+							Portfolio
 						</a>
 					</Link>
 				</li>

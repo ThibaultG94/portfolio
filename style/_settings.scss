@@ -39,7 +39,6 @@ $red: rgb(253, 87, 87);
 * {
 	margin: 0;
 	padding: 0;
-	font-family: $font-3;
 	box-sizing: border-box;
 	outline: none;
 	border: none;
@@ -53,10 +52,10 @@ html {
 }
 
 body {
-	// background: #fcfcfc;
 	background: $color-5;
 	height: 100vh;
 	overflow-x: hidden;
+	font-family: $font-1;
 }
 
 li {

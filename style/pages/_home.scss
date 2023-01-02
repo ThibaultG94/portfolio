@@ -5,19 +5,12 @@
 }
 
 .home-main {
-	display: grid;
-	// align-items: center;
-	justify-items: center;
-	height: 100%;
-
 	.main-content {
 		margin-top: 10vh;
-		user-select: none;
 		text-align: center;
 
 		h1 {
 			font-size: 3.7rem;
-			position: relative;
 			font-family: $font-4;
 			font-weight: 100;
 			letter-spacing: 3px;
@@ -32,16 +25,16 @@
 			height: 1px;
 			background: #b3aca7;
 			width: 50%;
-			margin: 30px auto;
+			margin: 25px auto 30px;
 		}
 
 		h2 {
 			font-size: 3rem;
-			position: relative;
 			font-family: $font-1;
 			text-transform: uppercase;
 			text-shadow: -1px -1px 1px #283655;
-			color: #283655;
+			// color: #283655;
+			color: rgb(235, 244, 242);
 			letter-spacing: 0.2em;
 			font-weight: 100;
 			margin-bottom: 30px;
@@ -64,7 +57,7 @@
 			max-width: 60%;
 			min-width: 300px;
 			margin: 40px auto;
-			text-align: center;
+			user-select: none;
 		}
 
 		.typed {

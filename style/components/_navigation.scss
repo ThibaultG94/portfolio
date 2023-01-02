@@ -9,6 +9,16 @@
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
+
+	@media screen and (max-width: 1024px) {
+		padding: 22px 20px;
+		font-size: 0.9rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 20px 15px;
+		font-size: 0.8rem;
+	}
 }
 
 .active {
