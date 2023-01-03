@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 const Navbar = () => {
 	const router = useRouter();
@@ -8,6 +9,11 @@ const Navbar = () => {
 		document.querySelector('.navigation').classList.toggle('nav-active');
 		document.querySelector('nav').classList.toggle('closed');
 	};
+
+	useEffect(() => {
+		document.querySelector('.navigation').classList.remove('nav-active');
+		document.querySelector('nav').classList.remove('closed');
+	}, [router]);
 
 	return (
 		<nav>
