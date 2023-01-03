@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import Navbar from './Navbar';
-import MediaQuery from 'react-responsive';
-import ToggleNavbar from './ToggleNavbar';
 
 const Header = () => {
 	return (
@@ -18,12 +16,7 @@ const Header = () => {
 					</div>
 					<span>Thibault Guilhem</span>
 				</div>
-				<MediaQuery minWidth={700}>
-					<Navbar />
-				</MediaQuery>
-				<MediaQuery maxWidth={699}>
-					<ToggleNavbar />
-				</MediaQuery>
+				<Navbar />
 			</div>
 		</header>
 	);

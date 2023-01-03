@@ -1,5 +1,18 @@
+nav {
+	position: relative;
+}
+
 .navigation {
 	display: flex;
+
+	@media screen and (max-width: 700px) {
+		display: none;
+		position: absolute;
+		left: -40px;
+		top: 60px;
+		height: 100px;
+		z-index: 10;
+	}
 }
 
 .nav-link {
@@ -18,6 +31,10 @@
 	@media screen and (max-width: 768px) {
 		padding: 20px 15px;
 		font-size: 0.8rem;
+	}
+
+	@media screen and (max-width: 700px) {
+		padding: 5px 10px;
 	}
 }
 
@@ -41,13 +58,34 @@
 		transition: 0.3s ease;
 		background: $color-4;
 	}
+
+	@media screen and (min-width: 700px) {
+		display: none;
+	}
 }
 
-.toggle-menu {
-	display: none;
-	position: absolute;
-}
-
-.toggle {
+.nav-active {
 	display: block;
+
+	@media screen and (min-width: 700px) {
+		display: none;
+	}
 }
+
+.closed span {
+	// position: absolute;
+	transform-origin: left;
+}
+.closed span:nth-child(1) {
+	transform: rotate(45deg);
+}
+.closed span:nth-child(2) {
+	opacity: 0;
+}
+.closed span:nth-child(3) {
+	transform: rotate(-45deg);
+	margin-top: 12px;
+}
+// .closed ~ .content {
+// 	opacity: 0.3;
+// }

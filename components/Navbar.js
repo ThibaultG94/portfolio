@@ -4,8 +4,18 @@ import { useRouter } from 'next/router';
 const Navbar = () => {
 	const router = useRouter();
 
+	const activeNavbar = () => {
+		document.querySelector('.navigation').classList.toggle('nav-active');
+		document.querySelector('nav').classList.toggle('closed');
+	};
+
 	return (
 		<nav>
+			<div className="toggle-btn" onClick={() => activeNavbar()}>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<ul className="navigation">
 				<li>
 					<Link legacyBehavior href="/">
