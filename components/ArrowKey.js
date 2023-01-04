@@ -7,6 +7,8 @@ const ArrowKey = (props) => {
 		if (e.key === 'ArrowLeft') {
 			switch (router.asPath) {
 				case '/':
+					router.push('/glossaire');
+					router.asPath = '/glossaire';
 					break;
 				case '/about':
 					router.push('/');
@@ -63,6 +65,10 @@ const ArrowKey = (props) => {
 				case '/contact':
 					router.push('/portfolio');
 					router.asPath = '/portfolio';
+					break;
+				case '/glossaire':
+					router.push('/contact');
+					router.asPath = '/contact';
 					break;
 				default:
 					break;
@@ -131,6 +137,12 @@ const ArrowKey = (props) => {
 					router.asPath = '/contact';
 					break;
 				case '/contact':
+					router.push('/glossaire');
+					router.asPath = '/glossaire';
+					break;
+				case '/glossaire':
+					router.push('/');
+					router.asPath = '/';
 					break;
 				default:
 					break;

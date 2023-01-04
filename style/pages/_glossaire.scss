@@ -1,0 +1,15 @@
+.glossaire {
+	position: absolute;
+	width: 100vw;
+	height: 80vh;
+	text-align: center;
+
+	h1 {
+		font-family: $font-4;
+		font-weight: 100;
+		text-transform: uppercase;
+		padding-top: 40px;
+		font-size: 3.3rem;
+		letter-spacing: 3px;
+	}
+}
