@@ -9,15 +9,35 @@
 		margin-top: 10vh;
 		text-align: center;
 
+		@media screen and (max-width: 425px) {
+			margin-top: 7vh;
+		}
+
 		h1 {
-			font-size: 3.7rem;
+			font-size: 4rem;
 			font-family: $font-4;
 			font-weight: 100;
 			letter-spacing: 3px;
 			text-transform: uppercase;
 
-			@media screen and (max-width: 650px) {
-				font-size: 2rem;
+			@media screen and (max-width: 1024px) {
+				font-size: 3rem;
+			}
+
+			@media screen and (max-width: 768px) {
+				font-size: 2.2rem;
+			}
+
+			@media screen and (max-width: 425px) {
+				font-size: 1.9rem;
+			}
+
+			@media screen and (max-width: 375px) {
+				font-size: 1.7rem;
+			}
+
+			@media screen and (max-width: 320px) {
+				font-size: 1.5rem;
 			}
 		}
 
@@ -29,27 +49,35 @@
 		}
 
 		h2 {
-			font-size: 3rem;
+			font-size: 4rem;
 			font-family: $font-1;
 			text-transform: uppercase;
 			text-shadow: -1px -1px 1px #283655;
-			// color: #283655;
 			color: rgb(235, 244, 242);
 			letter-spacing: 0.2em;
 			font-weight: 100;
 			margin-bottom: 30px;
 
-			@media screen and (max-width: 650px) {
-				font-size: 2rem;
+			@media screen and (max-width: 1024px) {
+				font-size: 3rem;
 			}
-		}
 
-		h3 {
-			font-size: 4.2rem;
-			font-weight: 100;
+			@media screen and (max-width: 768px) {
+				font-size: 2.2rem;
+			}
 
-			@media screen and (max-width: 650px) {
-				font-size: 2rem;
+			@media screen and (max-width: 425px) {
+				font-size: 1.8rem;
+				max-width: 300px;
+				margin: 0 auto;
+			}
+
+			@media screen and (max-width: 375px) {
+				font-size: 1.7rem;
+			}
+
+			@media screen and (max-width: 320px) {
+				font-size: 1.5rem;
 			}
 		}
 
@@ -58,13 +86,44 @@
 			min-width: 300px;
 			margin: 40px auto;
 			user-select: none;
+
+			@media screen and (max-width: 1024px) {
+				margin: 30px auto;
+			}
+
+			@media screen and (max-width: 320px) {
+				min-width: 250px;
+			}
+
+			@media screen and (max-width: 260px) {
+				min-width: 10px;
+			}
 		}
 
 		.typed {
 			font-family: $font-1;
-			font-size: 1.3rem;
+			font-size: 1.7rem;
 			letter-spacing: 0.03em;
-			line-height: 1.3em;
+			line-height: 1.4em;
+
+			@media screen and (max-width: 1024px) {
+				font-size: 1.2rem;
+				line-height: 1.3em;
+			}
+
+			@media screen and (max-width: 768px) {
+				font-size: 1.1rem;
+				line-height: 1.2em;
+			}
+
+			@media screen and (max-width: 425px) {
+				font-size: 1rem;
+				line-height: 1.1em;
+			}
+
+			@media screen and (max-width: 320px) {
+				font-size: 0.9rem;
+			}
 		}
 	}
 }
