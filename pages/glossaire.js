@@ -7,8 +7,8 @@ const glossaire = () => {
 	return (
 		<div className="glossaire">
 			<Meta />
-			<h1>Glossaire</h1>
 			<div className="glossaire-container">
+				<h1>Glossaire</h1>
 				{terms.map((term) => (
 					<div key={term.id}>{term.title}</div>
 				))}

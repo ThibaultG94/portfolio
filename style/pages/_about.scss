@@ -16,3 +16,41 @@
 		letter-spacing: 3px;
 	}
 }
+
+.about-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 30px;
+
+	.card {
+		border: 1px solid black;
+		height: 45vh;
+		width: 25vw;
+		padding: 20px;
+		border-radius: 3px;
+	}
+
+	.infos {
+		// background: blue;
+		p {
+			margin-bottom: 10px;
+		}
+	}
+
+	.skills {
+		// background: white;
+	}
+
+	.hobbies {
+		// background: red;
+	}
+}
+
+.about-links {
+	margin-top: 20px;
+
+	i {
+		margin-left: 10px;
+	}
+}
