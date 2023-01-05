@@ -15,3 +15,24 @@
 		letter-spacing: 3px;
 	}
 }
+
+.glossaire-content {
+	max-width: 70vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+
+	p,
+	h3 {
+		font-family: $font-3;
+		font-size: 1.1rem;
+	}
+
+	&-explanations {
+		background: white;
+		max-width: 60vw;
+		min-width: 60vw;
+		padding: 10px;
+		text-align: left;
+	}
+}
