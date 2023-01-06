@@ -57,7 +57,7 @@ const project = ({ project }) => {
 			<Buttons
 				left={project.id === 1 ? '/' : '/projects/' + (project.id - 1)}
 				right={
-					(project.id === 4) | (project.id === 11)
+					(project.id === 4) | (project.id === 13)
 						? '/portfolio'
 						: '/projects/' + (project.id + 1)
 				}
