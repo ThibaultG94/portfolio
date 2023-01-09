@@ -24,12 +24,14 @@
 	margin-top: 30px;
 
 	.card {
-		border: 1px solid black;
 		height: 45vh;
 		width: 25vw;
 		padding: 20px;
-		border-radius: 3px;
+		border-radius: 6px;
 		background: $color-1;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+		font-family: $font-1;
+		letter-spacing: 1px;
 	}
 
 	.infos {

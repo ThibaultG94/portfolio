@@ -97,12 +97,22 @@
 	&:hover span,
 	span:hover {
 		visibility: visible;
-		transform: translateY(-80%);
+		transform: translateY(-20%);
 	}
 
 	&:focus span,
 	span:focus {
 		visibility: visible;
-		transform: translateY(-80%);
+		transform: translateY(-20%);
+	}
+
+	.langages {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		img {
+			width: 50px;
+		}
 	}
 }

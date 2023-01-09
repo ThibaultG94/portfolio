@@ -29,6 +29,20 @@ export const projects = [
 	},
 	{
 		id: 3,
+		title: 'Movies App',
+		date: 'Novembre 2022',
+		languages: [
+			'../assets/img/react.png',
+			'../assets/img/sass.png',
+			'../assets/img/html.png',
+		],
+		infos: 'Application React pour chercher des films et les ajouter/supprimer en favoris dans le localStorage',
+		img: '/assets/img/projet-react-3.jpg',
+		link: 'https://react-movies-rust.vercel.app/',
+		github: 'https://github.com/ThibaultG94/react-movies',
+	},
+	{
+		id: 4,
 		title: 'Vitrine Helium',
 		date: 'Septembre 2022',
 		languages: [
@@ -42,7 +56,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/Projet_3-Integration_Helium',
 	},
 	{
-		id: 4,
+		id: 5,
 		title: 'Vitrine Le Resto',
 		date: 'Août 2022',
 		languages: ['../assets/img/sass.png', '../assets/img/html.png'],
@@ -52,7 +66,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/Projet_2-Integration_Le_Resto',
 	},
 	{
-		id: 5,
+		id: 6,
 		title: 'Portfolio Bootstrap',
 		date: 'Octobre 2022',
 		languages: [
@@ -66,7 +80,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/Projet-Bootstrap_5',
 	},
 	{
-		id: 6,
+		id: 7,
 		title: 'Vitrine Montagne',
 		date: 'Juillet 2022',
 		languages: ['../assets/img/sass.png', '../assets/img/html.png'],
@@ -76,7 +90,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/Projet_1-Int-gration_La_Montagne',
 	},
 	{
-		id: 7,
+		id: 8,
 		title: 'API Countries',
 		date: 'Octobre 2022',
 		languages: [
@@ -90,7 +104,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/projet-react-1',
 	},
 	{
-		id: 8,
+		id: 9,
 		title: 'React Cooking App',
 		date: 'Novembre 2022',
 		languages: [
@@ -104,7 +118,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/React-TP1--Cooking_App',
 	},
 	{
-		id: 9,
+		id: 10,
 		title: 'Date Calculator',
 		date: 'Septembre 2022',
 		languages: [
@@ -118,7 +132,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/TP8--Date_Calculator',
 	},
 	{
-		id: 10,
+		id: 11,
 		title: 'Bubble Game',
 		date: 'Aout 2022',
 		languages: [
@@ -132,7 +146,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/Projet_2-Generateur_de_bulle',
 	},
 	{
-		id: 11,
+		id: 12,
 		title: 'Password Generator',
 		date: 'Septembre 2022',
 		languages: [
@@ -146,7 +160,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/Generateur_de_mot_de_passe',
 	},
 	{
-		id: 12,
+		id: 13,
 		title: 'Joke App',
 		date: 'Septembre 2022',
 		languages: [
@@ -160,7 +174,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/joke-app',
 	},
 	{
-		id: 13,
+		id: 14,
 		title: 'ToDo List',
 		date: 'Septembre 2022',
 		languages: [

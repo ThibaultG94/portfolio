@@ -24,6 +24,15 @@ const portfolio = () => {
 						<li key={project.id} className="portfolio-content">
 							<span>
 								<h3>{project.title}</h3>
+								<ul className="langages">
+									{project.languages.map((item) => (
+										<img
+											src={item}
+											alt="langage"
+											key={item}
+										/>
+									))}
+								</ul>
 							</span>
 							<Link
 								href="/projects/[id]"
