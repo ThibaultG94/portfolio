@@ -3,28 +3,25 @@ import { TagCloud } from 'react-tagcloud';
 
 const Hobbies = () => {
 	const skillsData = [
-		{ value: 'Littérature', count: 1 },
-		{ value: '3D', count: 2 },
-		{ value: 'Sciences', count: 3 },
+		{ value: 'Sport', count: 1 },
+		{ value: 'Littérature', count: 2 },
+		{ value: 'Voyages', count: 3 },
 		{ value: 'Jeux Vidéos', count: 4 },
-		{ value: 'Animation', count: 5 },
-		{ value: 'Photo', count: 6 },
-		{ value: 'Montage', count: 7 },
-		{ value: 'Code', count: 8 },
-		{ value: 'Cinéma', count: 9 },
-		// { value: 'React', count: 30 },
-		// { value: 'Nodejs', count: 18 },
-		// { value: 'Nextjs', count: 22 },
-		// { value: 'Redux', count: 25 },
-		// { value: 'Firebase', count: 18 },
-		// { value: 'Git', count: 24 },
+		{ value: 'Sciences', count: 5 },
+		{ value: '3D', count: 6 },
+		{ value: 'Animation', count: 7 },
+		{ value: 'Photo', count: 8 },
+		{ value: 'Montage', count: 9 },
+		{ value: 'Code', count: 10 },
+		{ value: 'Films', count: 11 },
+		{ value: 'Cinéma', count: 12 },
 	];
 	return (
 		<TagCloud
 			minSize={12}
 			maxSize={35}
 			tags={skillsData}
-			onClick={(tag) => alert(`'${tag.value}' was selected!`)}
+			// onClick={(tag) => alert(`'${tag.value}' was selected!`)}
 		/>
 	);
 };

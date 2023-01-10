@@ -4,19 +4,9 @@ import Buttons from '../components/Buttons';
 import Meta from '../components/Meta';
 import Cloud from '../components/Cloud';
 import Hobbies from '../components/Hobbies';
+import PresentationTyped from '../components/PresentationTyped';
 
 const about = () => {
-	const myBirthDate = '08/20/1994';
-	const getAge = (datestring) => {
-		let today = new Date();
-		const birthDate = new Date(datestring);
-		let age = today.getFullYear() - birthDate.getFullYear();
-		let m = today.getMonth() - birthDate.getMonth();
-		if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-			age--;
-		}
-		return age;
-	};
 	return (
 		<div className="about">
 			<Meta />
@@ -25,10 +15,7 @@ const about = () => {
 				<div className="about-content">
 					<div className="infos card">
 						<div className="presentation">
-							<p>Prénom: Thibault</p>
-							<p>Nom: Guilhem</p>
-							<p>Age: {getAge(myBirthDate)} ans</p>
-							<p>Location: Noisy-le-Grand (93160)</p>
+							<PresentationTyped />
 						</div>
 					</div>
 					<div className="skills card">

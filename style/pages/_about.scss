@@ -30,29 +30,25 @@
 		width: 25vw;
 		padding: 20px;
 		border-radius: 6px;
-		background: rgba($color-1, 0.4);
+		background: rgba($color-1, 0);
 		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 		font-family: $font-1;
 		letter-spacing: 1px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		text-align: left;
 	}
 
 	.infos {
-		// background: blue;
-		p {
-			margin-bottom: 10px;
+		span {
+			line-height: 20px;
 		}
 	}
 
-	// .skills {
-	// 	// background: white;
-	// }
-
-	// .hobbies {
-	// 	// background: red;
-	// }
+	strong {
+		font-weight: 500;
+	}
 }
 
 .about-links {

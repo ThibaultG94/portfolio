@@ -17,6 +17,7 @@ const Cloud = () => {
 		'ExpressJs',
 		'Firebase',
 		'Bootstrap',
+		'Linux',
 		'Redux',
 		'npm',
 		'NodeJs',
@@ -46,7 +47,7 @@ const Cloud = () => {
 	};
 
 	const changeSize = () => {
-		let i = 0.1;
+		let i = 0.2;
 		document.querySelectorAll('.tagcloud--item').forEach((element) => {
 			element.style.fontSize = `${i}rem`;
 			i = i + 0.1;
