@@ -2,6 +2,8 @@ import Link from 'next/link';
 import ArrowKey from '../components/ArrowKey';
 import Buttons from '../components/Buttons';
 import Meta from '../components/Meta';
+import Cloud from '../components/Cloud';
+import Hobbies from '../components/Hobbies';
 
 const about = () => {
 	const myBirthDate = '08/20/1994';
@@ -22,16 +24,18 @@ const about = () => {
 				<h1>About</h1>
 				<div className="about-content">
 					<div className="infos card">
-						<p>Prénom: Thibault</p>
-						<p>Nom: Guilhem</p>
-						<p>Age: {getAge(myBirthDate)} ans</p>
-						<p>Location: Noisy-le-Grand (93160)</p>
+						<div className="presentation">
+							<p>Prénom: Thibault</p>
+							<p>Nom: Guilhem</p>
+							<p>Age: {getAge(myBirthDate)} ans</p>
+							<p>Location: Noisy-le-Grand (93160)</p>
+						</div>
 					</div>
 					<div className="skills card">
-						<p>Compétences</p>
+						<Cloud />
 					</div>
 					<div className="hobbies card">
-						<p>Hobbies</p>
+						<Hobbies />
 					</div>
 				</div>
 				<div className="about-links">

@@ -22,16 +22,21 @@
 	align-items: center;
 	justify-content: space-around;
 	margin-top: 30px;
+	max-width: 90%;
+	margin: 0 auto;
 
 	.card {
-		height: 45vh;
+		height: 50vh;
 		width: 25vw;
 		padding: 20px;
 		border-radius: 6px;
-		background: $color-1;
+		background: rgba($color-1, 0.4);
 		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 		font-family: $font-1;
 		letter-spacing: 1px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.infos {

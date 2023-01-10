@@ -16,7 +16,6 @@ const project = ({ project }) => {
 					<p>{project.date}</p>
 					<ul className="langages">
 						{project.languages.map((item) => (
-							// <li key={item}>{item}</li>
 							<img src={item} alt="langage" key={item} />
 						))}
 					</ul>
