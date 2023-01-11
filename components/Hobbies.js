@@ -1,5 +1,6 @@
 import React from 'react';
 import { TagCloud } from 'react-tagcloud';
+import { Fade } from 'react-awesome-reveal';
 
 const Hobbies = () => {
 	const skillsData = [
@@ -17,12 +18,9 @@ const Hobbies = () => {
 		{ value: 'Cinéma', count: 12 },
 	];
 	return (
-		<TagCloud
-			minSize={12}
-			maxSize={35}
-			tags={skillsData}
-			// onClick={(tag) => alert(`'${tag.value}' was selected!`)}
-		/>
+		// <Fade cascade>
+		<TagCloud minSize={1} maxSize={35} tags={skillsData} />
+		// {/* </Fade> */}
 	);
 };
 
