@@ -2,6 +2,12 @@
 	position: absolute;
 	width: 100vw;
 	height: 80vh;
+
+	.button {
+		width: 280px;
+		padding: 10px;
+		margin: 0 auto 40px;
+	}
 }
 
 .about-container {
@@ -14,6 +20,20 @@
 		padding-top: 40px;
 		font-size: 3.3rem;
 		letter-spacing: 3px;
+
+		@media screen and (max-width: 965px) {
+			font-size: 3rem;
+		}
+
+		@media screen and (max-width: 425px) {
+			font-size: 2.3rem;
+			padding-top: 30px;
+			margin-bottom: 10px;
+		}
+
+		@media screen and (max-width: 375px) {
+			margin-bottom: 20px;
+		}
 	}
 }
 
@@ -24,6 +44,19 @@
 	margin-top: 30px;
 	max-width: 90%;
 	margin: 0 auto;
+
+	@media screen and (max-width: 965px) {
+		display: grid;
+		grid-template-rows: 40% 60%;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 'inf inf' 'b c';
+	}
+
+	@media screen and (max-width: 712px) {
+		grid-template-rows: 25% 45% 30%;
+		grid-template-columns: 1fr;
+		grid-template-areas: 'inf' 'b' 'c';
+	}
 
 	.card {
 		height: 50vh;
@@ -38,11 +71,42 @@
 		align-items: center;
 		justify-content: center;
 		text-align: left;
+
+		@media screen and (max-width: 965px) {
+			padding: 10px;
+		}
+
+		@media screen and (max-width: 712px) {
+			padding: 30px;
+		}
 	}
 
 	.infos {
 		span {
 			line-height: 20px;
+		}
+
+		@media screen and (max-width: 965px) {
+			grid-area: inf;
+			width: 80vw;
+			margin: 0 auto;
+		}
+	}
+
+	.skills,
+	.hobbies {
+		@media screen and (max-width: 965px) {
+			margin: 0 auto;
+			text-align: center;
+			width: 35vw;
+		}
+
+		@media screen and (max-width: 712px) {
+			width: 60vw;
+		}
+
+		@media screen and (max-width: 425px) {
+			width: 80vw;
 		}
 	}
 

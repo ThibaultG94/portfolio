@@ -105,7 +105,7 @@ export const projects = [
 	},
 	{
 		id: 9,
-		title: 'React Cooking App',
+		title: 'Cooking App',
 		date: 'Novembre 2022',
 		languages: [
 			'../assets/img/react.png',
