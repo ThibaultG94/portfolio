@@ -65,6 +65,7 @@
 	.card {
 		height: 40vh;
 		width: 25vw;
+		min-height: 25vw;
 		padding: 40px;
 		border-radius: 8px;
 		background: rgba($color-1, 0.8);
