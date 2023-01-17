@@ -10,9 +10,9 @@ const Meta = ({ title, description }) => {
 };
 
 Meta.defaultProps = {
-	title: 'Portfolio Thibault Guilhem',
+	title: 'Thibault Guilhem - Développeur Web Frontend - Site Portfolio',
 	description:
-		'Développeur frontend React, JavaScript, Redux, NextJs pour projets web, applications, etc.',
+		'Développeur Frontend React, JavaScript, Redux, NextJs pour projets web, applications, sites vitrines.',
 };
 
 export default Meta;

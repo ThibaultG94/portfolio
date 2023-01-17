@@ -14,8 +14,8 @@ const portfolio = () => {
 	return (
 		<div className="portfolio">
 			<Meta
-				title={'Portfolio dev, les tous derniers projets réalisés'}
-				description={'Tous les projets dev mis en ligne'}
+			// title={'Portfolio dev, les tous derniers projets réalisés'}
+			// description={'Tous les projets dev mis en ligne'}
 			/>
 			<div className="porfolio-main">
 				<h1>Mon Portfolio</h1>

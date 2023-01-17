@@ -2,6 +2,7 @@
 	position: absolute;
 	width: 100vw;
 	height: 80vh;
+	padding-bottom: 20px;
 
 	.button {
 		width: 280px;
@@ -85,9 +86,15 @@
 		@media screen and (max-width: 712px) {
 			padding: 30px;
 		}
+
+		@media screen and (max-width: 425px) {
+			margin-bottom: 80px !important;
+		}
 	}
 
 	.infos {
+		min-width: 440px;
+
 		span {
 			line-height: 20px;
 		}
@@ -101,7 +108,14 @@
 		@media screen and (max-width: 712px) {
 			width: 80vw;
 			margin-bottom: 30px;
+			min-width: 100px;
+			padding: 20px;
 		}
+	}
+
+	.skills {
+		background: none;
+		box-shadow: none;
 	}
 
 	.skills,

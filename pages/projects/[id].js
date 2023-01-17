@@ -9,7 +9,9 @@ import { projects } from '../../projectsData';
 const project = ({ project }) => {
 	return (
 		<div className="project">
-			<Meta />
+			<Meta
+				title={`Projet ${project.title} - Thibault Guilhem - Développeur Web Frontend`}
+			/>
 			<div className="project-main">
 				<div className="project-content">
 					<h1>{project.title}</h1>

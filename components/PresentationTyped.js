@@ -22,7 +22,7 @@ const PresentationTyped = () => {
 			strings: [
 				`<em>Prénom:</em> <strong>Thibault</strong><br /><em>Nom:</em> <strong>Guilhem</strong><br /><em>Age:</em> <strong>${getAge(
 					myBirthDate
-				)} ans</strong><br /><em>Location:</em> <strong>Noisy-le-Grand</strong><br /><em>Anciennement :</em> <strong>Monteur, Géomètre, Paysagiste</strong><br /><em>Recherche:</em> <strong>Alternance Développeur Front-end avec OpenClassrooms</strong>`,
+				)} ans</strong><br /><em>Location:</em> <strong>Noisy-le-Grand</strong><br /><em>Anciennement :</em> <strong>Monteur, Géomètre, Paysagiste</strong><br /><em>Recherche:</em> <strong>Alternance OpenClassrooms</strong>`,
 			],
 			typeSpeed: 40,
 			backSpeed: 0,

@@ -8,10 +8,7 @@ const contact = () => {
 		<div className="contact">
 			<Meta />
 			<ContactForm />
-			<Buttons
-				left={'/portfolio'}
-				//  right={'/glossaire'}
-			/>
+			<Buttons left={'/portfolio'} />
 			<ArrowKey />
 		</div>
 	);
