@@ -7,7 +7,7 @@ import Hobbies from '../components/Hobbies';
 import PresentationTyped from '../components/PresentationTyped';
 import { Fade } from 'react-awesome-reveal';
 
-const about = () => {
+const About = () => {
 	return (
 		<div className="about">
 			<Meta />
@@ -49,4 +49,4 @@ const about = () => {
 	);
 };
 
-export default about;
+export default About;

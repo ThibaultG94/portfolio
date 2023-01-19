@@ -3,7 +3,7 @@ import Buttons from '../components/Buttons';
 import ContactForm from '../components/ContactForm';
 import Meta from '../components/Meta';
 
-const contact = () => {
+const Contact = () => {
 	return (
 		<div className="contact">
 			<Meta />
@@ -14,4 +14,4 @@ const contact = () => {
 	);
 };
 
-export default contact;
+export default Contact;

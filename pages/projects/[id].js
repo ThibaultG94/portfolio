@@ -18,7 +18,13 @@ const project = ({ project }) => {
 					<p>{project.date}</p>
 					<ul className="langages">
 						{project.languages.map((item) => (
-							<img src={item} alt="langage" key={item} />
+							<Image
+								src={item}
+								alt="langage"
+								key={item}
+								height={50}
+								width={60}
+							/>
 						))}
 					</ul>
 				</div>

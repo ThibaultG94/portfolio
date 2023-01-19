@@ -7,7 +7,7 @@ import { path } from '../config';
 import ArrowKey from '../components/ArrowKey';
 import Buttons from '../components/Buttons';
 
-const portfolio = () => {
+const Portfolio = () => {
 	useEffect(() => {
 		localStorage.projects = true;
 	}, []);
@@ -26,10 +26,12 @@ const portfolio = () => {
 								<h3>{project.title}</h3>
 								<ul className="langages">
 									{project.languages.map((item) => (
-										<img
+										<Image
 											src={item}
 											alt="langage"
 											key={item}
+											height={120}
+											width={120}
 										/>
 									))}
 								</ul>
@@ -54,4 +56,4 @@ const portfolio = () => {
 	);
 };
 
-export default portfolio;
+export default Portfolio;
