@@ -30,8 +30,8 @@ const Portfolio = () => {
 											src={item}
 											alt="langage"
 											key={item}
-											height={120}
-											width={120}
+											height={50}
+											width={50}
 										/>
 									))}
 								</ul>

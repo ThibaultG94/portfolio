@@ -23,7 +23,7 @@ const project = ({ project }) => {
 								alt="langage"
 								key={item}
 								height={50}
-								width={60}
+								width={50}
 							/>
 						))}
 					</ul>
