@@ -22,7 +22,7 @@ const PresentationTyped = () => {
 			strings: [
 				`<em>Prénom:</em> <strong>Thibault</strong><br /><em>Nom:</em> <strong>Guilhem</strong><br /><em>Age:</em> <strong>${getAge(
 					myBirthDate
-				)} ans</strong><br /><em>Location:</em> <strong>Noisy-le-Grand</strong><br /><em>Anciennement :</em> <strong>Monteur, Géomètre, Paysagiste</strong><br /><em>Recherche:</em> <strong>Alternance OpenClassrooms</strong>`,
+				)} ans</strong><br /><em>Location:</em> <strong>Noisy-le-Grand</strong><br /><em>Anciennement :</em><ul> <li class="elements-right"><strong>Monteur</strong></li><li class="elements-right"><strong>Géomètre</strong></li><li class="elements-right"><strong>Paysagiste</strong></li><em>Recherche:</em> <strong>Alternance OpenClassrooms</strong>`,
 			],
 			typeSpeed: 40,
 			backSpeed: 0,
@@ -34,11 +34,7 @@ const PresentationTyped = () => {
 			typed.current.destroy();
 		};
 	}, []);
-	return (
-		<div className="presentation-typed">
-			<span className="typed" ref={el}></span>
-		</div>
-	);
+	return <span className="typed" ref={el}></span>;
 };
 
 export default PresentationTyped;
