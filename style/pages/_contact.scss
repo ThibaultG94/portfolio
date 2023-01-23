@@ -11,26 +11,62 @@
 		min-width: 250px;
 
 		@media screen and (max-width: 768px) {
-			max-width: 70%;
+			max-width: 80%;
 		}
 
 		@media screen and (max-width: 425px) {
-			max-width: 75%;
+			max-width: 85%;
 		}
 
 		.form-content {
 			background: white;
-			display: grid;
-			height: 80vh;
-			grid-template-rows: (15%, 20%, 20%, 30%, 15%);
+			// display: grid;
+			// height: 80vh;
+			// grid-template-rows: (15%, 20%, 20%, 30%, 15%);
 			padding: 40px 45px 20px;
 			border-radius: 16px;
 			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 
 			@media screen and (max-width: 425px) {
-				padding: 30px 35px 0;
-				height: 85vh;
-				grid-template-rows: (5%, 15%, 15%, 60%, 5%);
+				padding: 30px 35px 20px;
+				// height: 85vh;
+				// grid-template-rows: (5%, 15%, 15%, 60%, 5%);
+			}
+
+			.name-container,
+			.email-container,
+			.message-container {
+				font-size: 1.3rem;
+				margin: 40px 0;
+
+				@media screen and (max-width: 1024px) {
+					font-size: 1.2rem;
+					margin: 35px 0;
+				}
+
+				@media screen and (max-width: 768px) {
+					font-size: 1.1rem;
+					margin: 30px 0;
+				}
+
+				@media screen and (max-width: 600px) {
+					margin: 25px 0;
+				}
+
+				@media screen and (max-width: 425px) {
+					font-size: 1rem;
+					margin: 20px 0;
+				}
+
+				@media screen and (max-width: 375px) {
+					font-size: 1rem;
+					margin: 15px 0;
+				}
+
+				@media screen and (max-width: 320px) {
+					font-size: 0.9rem;
+					margin: 10px 0;
+				}
 			}
 
 			h2 {
@@ -38,6 +74,38 @@
 				font-family: $font-1;
 				letter-spacing: 1px;
 				font-weight: 100;
+				font-size: 2.3rem;
+				margin-bottom: 1px;
+
+				@media screen and (max-width: 1024px) {
+					font-size: 2.1rem;
+					margin-bottom: 5px;
+				}
+
+				@media screen and (max-width: 768px) {
+					font-size: 1.9rem;
+					margin-bottom: 10px;
+				}
+
+				@media screen and (max-width: 600px) {
+					font-size: 1.7rem;
+					margin-bottom: 15px;
+				}
+
+				@media screen and (max-width: 425px) {
+					font-size: 1.5rem;
+					margin-bottom: 20px;
+				}
+
+				@media screen and (max-width: 375px) {
+					font-size: 1.3rem;
+					margin-bottom: 25px;
+				}
+
+				@media screen and (max-width: 320px) {
+					font-size: 1.2rem;
+					margin-bottom: 30px;
+				}
 			}
 
 			div {
@@ -57,7 +125,7 @@
 				box-shadow: 0 1px 2px rbga(0, 0, 0, 0.1);
 				border-radius: 9px;
 				font-size: 1.1rem;
-				padding-left: 10px;
+				padding-left: 5px;
 				transition: 0.2s;
 			}
 
@@ -73,29 +141,67 @@
 		textarea {
 			resize: none;
 			padding: 6px 0;
-			height: 70%;
+			height: 120px;
 
 			@media screen and (max-width: 540px) {
 				width: 75%;
+				height: 90px;
 				padding: 12px 0;
 			}
 
 			@media screen and (max-width: 425px) {
-				height: 90%;
+				height: 60px;
 				padding: 10px 0;
 			}
 		}
 
 		input.button {
 			background: $color-3;
-			height: 55px;
-			width: 126px;
+			height: 63px;
+			width: 156px;
 			border-radius: 50px;
-			margin-top: 20px;
-			font-size: 1.2rem;
+			margin-bottom: 40px;
+			font-size: 1.3rem;
 			cursor: pointer;
 			transition: 0.2s;
 			border: none;
+
+			@media screen and (max-width: 1024px) {
+				font-size: 1.2rem;
+				margin-bottom: 35px;
+				height: 62px;
+				width: 151px;
+			}
+
+			@media screen and (max-width: 768px) {
+				font-size: 1.1rem;
+				margin-bottom: 30px;
+				height: 61px;
+				width: 146px;
+			}
+
+			@media screen and (max-width: 600px) {
+				margin-bottom: 25px;
+				height: 60px;
+				width: 141px;
+			}
+
+			@media screen and (max-width: 425px) {
+				font-size: 1rem;
+				margin-bottom: 20px;
+				height: 59px;
+				width: 136px;
+			}
+
+			@media screen and (max-width: 375px) {
+				margin-bottom: 15px;
+				height: 58px;
+				width: 131px;
+			}
+
+			@media screen and (max-width: 320px) {
+				margin-bottom: 10px;
+			}
 		}
 	}
 
