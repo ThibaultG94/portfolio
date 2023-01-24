@@ -8,7 +8,6 @@ const ContactForm = () => {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
-		console.log(process.env);
 		const formMessage = document.querySelector('.form-message');
 
 		emailjs
