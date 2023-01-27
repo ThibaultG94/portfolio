@@ -5,14 +5,13 @@ import Meta from '../components/Meta';
 import Cloud from '../components/Cloud';
 import Hobbies from '../components/Hobbies';
 import PresentationTyped from '../components/PresentationTyped';
-import { Fade } from 'react-awesome-reveal';
 
 const About = () => {
 	return (
 		<div className="about">
 			<Meta />
 			<div className="about-container">
-				<h1>About</h1>
+				<h1>À propos</h1>
 				<div className="about-content">
 					<div className="infos card">
 						<div className="presentation">
@@ -23,9 +22,7 @@ const About = () => {
 						<Cloud />
 					</div>
 					<div className="hobbies card">
-						{/* <Fade cascade duration={2000}> */}
 						<Hobbies />
-						{/* </Fade> */}
 					</div>
 				</div>
 				<div className="about-links">
