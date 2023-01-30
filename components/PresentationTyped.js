@@ -57,7 +57,7 @@ const PresentationTyped = () => {
 				enfin trouvé ma voie.<br /><br />
 				Je suis désormais à la recherche d'une entreprise pour travailler avec elle dans le cadre d'une alternance avec OpenClassrooms.`,
 			],
-			typeSpeed: 20,
+			typeSpeed: 10,
 			backSpeed: 0,
 		};
 

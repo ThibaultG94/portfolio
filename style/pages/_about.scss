@@ -45,7 +45,7 @@
 
 .about-content {
 	display: flex;
-	align-items: center;
+	// align-items: center;
 	justify-content: space-around;
 	margin-top: 30px;
 	max-width: 90%;
@@ -59,9 +59,9 @@
 	// 	gap: 20px;
 	// }
 
-	// @media screen and (max-width: 712px) {
-	// 	display: block;
-	// }
+	@media screen and (max-width: 768px) {
+		display: block;
+	}
 
 	.about-left,
 	.about-right {
@@ -80,6 +80,15 @@
 		.card {
 			display: block;
 			max-width: 60vw;
+
+			@media screen and (max-width: 1024px) {
+				width: 50vw;
+			}
+
+			@media screen and (max-width: 768px) {
+				width: 90vw;
+				margin-bottom: 30px;
+			}
 		}
 	}
 
@@ -92,12 +101,17 @@
 			justify-content: center;
 			margin-bottom: 30px;
 
+			@media screen and (max-width: 1024px) {
+				width: 35vw;
+			}
+
 			@media screen and (max-width: 965px) {
 				padding: 10px;
 			}
 
-			@media screen and (max-width: 712px) {
+			@media screen and (max-width: 768px) {
 				padding: 30px;
+				width: 60vw;
 			}
 
 			@media screen and (max-width: 425px) {
@@ -107,23 +121,14 @@
 	}
 
 	.infos {
-		// min-width: 440px;
+		min-width: 300px;
 
 		span {
 			line-height: 20px;
 		}
 
 		@media screen and (max-width: 965px) {
-			grid-area: inf;
-			width: 86vw;
 			margin: 0 auto;
-		}
-
-		@media screen and (max-width: 712px) {
-			width: 80vw;
-			margin-bottom: 30px;
-			min-width: 100px;
-			padding: 20px;
 		}
 	}
 
@@ -139,11 +144,11 @@
 		@media screen and (max-width: 965px) {
 			margin: 0 auto;
 			text-align: center;
-			width: 40vw;
+			// width: 40vw;
 		}
 
 		@media screen and (max-width: 712px) {
-			width: 80vw;
+			// width: 80vw;
 			margin-bottom: 30px;
 		}
 	}
