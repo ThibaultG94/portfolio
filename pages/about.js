@@ -4,10 +4,13 @@ import Buttons from '../components/Buttons';
 import Meta from '../components/Meta';
 import Cloud from '../components/Cloud';
 import Hobbies from '../components/Hobbies';
+import { useEffect, useState } from 'react';
 // import PresentationTyped from '../components/PresentationTyped';
 
 const About = () => {
 	const myBirthDate = '08/20/1994';
+	const [age, setAge] = useState();
+
 	const getAge = (datestring) => {
 		let today = new Date();
 		const birthDate = new Date(datestring);
@@ -18,6 +21,10 @@ const About = () => {
 		}
 		return age;
 	};
+
+	useEffect(() => {
+		setAge(getAge(myBirthDate));
+	}, []);
 
 	return (
 		<div className="about">
@@ -30,12 +37,11 @@ const About = () => {
 							<div className="presentation">
 								{/* <PresentationTyped /> */}
 								<p>
-									{`<em>Prénom:</em> <strong>Thibault</strong>
+									<em>Prénom:</em> <strong>Thibault</strong>
 									<br />
 									<em>Nom:</em> <strong>Guilhem</strong>
 									<br />
-									<em>Age:</em>{' '}
-									<strong>${getAge(myBirthDate)} ans</strong>
+									<em>Age:</em> <strong>{age} ans</strong>
 									<br />
 									<em>Location:</em>{' '}
 									<strong>Noisy-le-Grand</strong>
@@ -74,7 +80,7 @@ const About = () => {
 									<br />
 									Je suis désormais à la recherche d'une
 									entreprise pour travailler avec elle dans le
-									cadre d'une alternance avec OpenClassrooms.`}
+									cadre d'une alternance avec OpenClassrooms.
 								</p>
 							</div>
 						</div>
