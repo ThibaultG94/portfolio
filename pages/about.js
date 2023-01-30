@@ -37,13 +37,14 @@ const About = () => {
 							<div className="presentation">
 								{/* <PresentationTyped /> */}
 								<p>
-									<em>Prénom:</em> <strong>Thibault</strong>
+									<em>Prénom: </em> <strong>Thibault</strong>
 									<br />
-									<em>Nom:</em> <strong>Guilhem</strong>
+									<em>Nom: </em> <strong>Guilhem</strong>
 									<br />
-									<em>Age:</em> <strong>{age} ans</strong>
+									<em>Age: </em>
+									<strong>{age && age} ans</strong>
 									<br />
-									<em>Location:</em>{' '}
+									<em>Location: </em>
 									<strong>Noisy-le-Grand</strong>
 									<br />
 									<br />
