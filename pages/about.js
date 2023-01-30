@@ -13,16 +13,20 @@ const About = () => {
 			<div className="about-container">
 				<h1>À propos</h1>
 				<div className="about-content">
-					<div className="infos card">
-						<div className="presentation">
-							<PresentationTyped />
+					<div className="about-left">
+						<div className="infos card">
+							<div className="presentation">
+								<PresentationTyped />
+							</div>
 						</div>
 					</div>
-					<div className="skills card">
-						<Cloud />
-					</div>
-					<div className="hobbies card">
-						<Hobbies />
+					<div className="about-right">
+						<div className="skills card">
+							<Cloud />
+						</div>
+						<div className="hobbies card">
+							<Hobbies />
+						</div>
 					</div>
 				</div>
 				<div className="about-links">
