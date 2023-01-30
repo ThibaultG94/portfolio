@@ -45,19 +45,10 @@
 
 .about-content {
 	display: flex;
-	// align-items: center;
 	justify-content: space-around;
 	margin-top: 30px;
 	max-width: 90%;
 	margin: 0 auto;
-
-	// @media screen and (max-width: 965px) {
-	// 	display: grid;
-	// 	grid-template-rows: 40% 60%;
-	// 	grid-template-columns: 1fr 1fr;
-	// 	grid-template-areas: 'inf inf' 'b c';
-	// 	gap: 20px;
-	// }
 
 	@media screen and (max-width: 768px) {
 		display: block;
@@ -79,14 +70,14 @@
 	.about-left {
 		.card {
 			display: block;
-			max-width: 60vw;
+			width: 60vw;
 
 			@media screen and (max-width: 1024px) {
 				width: 50vw;
 			}
 
 			@media screen and (max-width: 768px) {
-				width: 90vw;
+				width: 80vw;
 				margin-bottom: 30px;
 			}
 		}
@@ -111,17 +102,20 @@
 
 			@media screen and (max-width: 768px) {
 				padding: 30px;
-				width: 60vw;
+				width: 80vw;
+				margin: 0 auto;
 			}
 
 			@media screen and (max-width: 425px) {
-				margin-bottom: 80px !important;
+				margin-bottom: 30px !important;
+				width: 90vw;
 			}
 		}
 	}
 
 	.infos {
 		min-width: 300px;
+		width: 100%;
 
 		span {
 			line-height: 20px;
@@ -181,5 +175,11 @@
 
 	.typed-cursor {
 		opacity: 0;
+	}
+}
+
+.tagcloud--item {
+	@media screen and (max-width: 375px) {
+		// transform: scale(1) !important;
 	}
 }
