@@ -30,12 +30,12 @@ const About = () => {
 							<div className="presentation">
 								{/* <PresentationTyped /> */}
 								<p>
-									<em>Prénom:</em> <strong>Thibault</strong>
+									{`<em>Prénom:</em> <strong>Thibault</strong>
 									<br />
 									<em>Nom:</em> <strong>Guilhem</strong>
 									<br />
 									<em>Age:</em>{' '}
-									<strong>{getAge(myBirthDate)} ans</strong>
+									<strong>${getAge(myBirthDate)} ans</strong>
 									<br />
 									<em>Location:</em>{' '}
 									<strong>Noisy-le-Grand</strong>
@@ -74,7 +74,7 @@ const About = () => {
 									<br />
 									Je suis désormais à la recherche d'une
 									entreprise pour travailler avec elle dans le
-									cadre d'une alternance avec OpenClassrooms.
+									cadre d'une alternance avec OpenClassrooms.`}
 								</p>
 							</div>
 						</div>
