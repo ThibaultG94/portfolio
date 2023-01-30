@@ -4,7 +4,7 @@ import Buttons from '../components/Buttons';
 import Meta from '../components/Meta';
 import Cloud from '../components/Cloud';
 import Hobbies from '../components/Hobbies';
-import PresentationTyped from '../components/PresentationTyped';
+// import PresentationTyped from '../components/PresentationTyped';
 
 const About = () => {
 	const myBirthDate = '08/20/1994';
