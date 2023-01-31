@@ -1,0 +1,66 @@
+.about-left {
+	.card {
+		display: block;
+		width: 60vw;
+
+		@media screen and (max-width: 1024px) {
+			width: 50vw;
+		}
+
+		@media screen and (max-width: 768px) {
+			width: 80vw;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.about-right {
+	.card {
+		width: 25vw;
+		min-height: 20vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 30px;
+
+		@media screen and (max-width: 1024px) {
+			width: 35vw;
+		}
+
+		@media screen and (max-width: 965px) {
+			padding: 10px;
+		}
+
+		@media screen and (max-width: 768px) {
+			padding: 30px;
+			width: 80vw;
+			margin: 0 auto;
+		}
+
+		@media screen and (max-width: 425px) {
+			margin-bottom: 30px !important;
+			width: 90vw;
+		}
+	}
+}
+
+.infos {
+	min-width: 300px;
+	width: 100%;
+
+	span {
+		line-height: 20px;
+	}
+
+	@media screen and (max-width: 965px) {
+		margin: 0 auto;
+	}
+}
+
+.about-links {
+	margin-top: 20px;
+
+	i {
+		margin-left: 10px;
+	}
+}
