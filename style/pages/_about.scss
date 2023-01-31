@@ -138,11 +138,9 @@
 		@media screen and (max-width: 965px) {
 			margin: 0 auto;
 			text-align: center;
-			// width: 40vw;
 		}
 
 		@media screen and (max-width: 712px) {
-			// width: 80vw;
 			margin-bottom: 30px;
 		}
 	}
@@ -175,11 +173,5 @@
 
 	.typed-cursor {
 		opacity: 0;
-	}
-}
-
-.tagcloud--item {
-	@media screen and (max-width: 375px) {
-		// transform: scale(1) !important;
 	}
 }
