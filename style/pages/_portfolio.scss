@@ -54,6 +54,10 @@
 	position: relative;
 	transition: transform 0.3s ease;
 
+	@media screen and (max-width: 768px) {
+		overflow-x: initial;
+	}
+
 	span {
 		position: absolute;
 		bottom: 20%;
