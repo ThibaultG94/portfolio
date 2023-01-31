@@ -44,6 +44,7 @@ const Portfolio = () => {
 									alt={project.title}
 									width={341}
 									height={192}
+									loading="eager"
 								/>
 							</Link>
 						</li>

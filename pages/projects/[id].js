@@ -24,6 +24,7 @@ const project = ({ project }) => {
 								key={item}
 								height={50}
 								width={50}
+								loading="eager"
 							/>
 						))}
 					</ul>
@@ -44,6 +45,7 @@ const project = ({ project }) => {
 								alt={project.title}
 								width={683}
 								height={384}
+								loading="eager"
 							/>
 						</Link>
 					</div>

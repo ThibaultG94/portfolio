@@ -12,6 +12,7 @@ const Header = () => {
 							alt="Thibault Guilhem"
 							width={50}
 							height={50}
+							loading="eager"
 						/>
 					</div>
 					<span>Thibault Guilhem</span>
