@@ -94,6 +94,13 @@ const About = () => {
 								<i className="fa-brands fa-github"></i>
 							</span>
 						</Link>
+						<Link
+							href={'https://github.com/ThibaultG94/portfolio'}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover">
+							<span className="button">Télécharger le CV</span>
+						</Link>
 					</div>
 				</div>
 			</div>

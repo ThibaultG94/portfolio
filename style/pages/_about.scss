@@ -6,12 +6,24 @@
 
 	.button-container {
 		grid-area: btn;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		@media screen and (max-width: 500px) {
+			flex-direction: column;
+			justify-content: center;
+		}
 	}
 
 	.button {
 		width: 280px;
 		padding: 10px;
 		margin: 0 auto 40px;
+
+		@media screen and (max-width: 500px) {
+			margin: 0 auto 10px;
+		}
 	}
 }
 
@@ -69,8 +81,9 @@
 
 	@media screen and (max-width: 550px) {
 		grid-template-columns: 100%;
-		grid-template-rows: 25% 65% 10%;
+		grid-template-rows: 20% 70% 10%;
 		grid-template-areas: 'ski' 'inf' 'btn';
+		max-width: 80%;
 	}
 
 	@media screen and (max-width: 320px) {
@@ -95,7 +108,7 @@
 		}
 
 		@media screen and (max-width: 425px) {
-			padding: 10px;
+			padding: 10px 15px;
 		}
 	}
 
@@ -119,15 +132,6 @@
 	.skills,
 	.hobbies {
 		font-family: $font-1;
-
-		// @media screen and (max-width: 965px) {
-		// 	margin: 0 auto;
-		// 	text-align: center;
-		// }
-
-		// @media screen and (max-width: 712px) {
-		// 	margin-bottom: 30px;
-		// }
 	}
 
 	strong {
