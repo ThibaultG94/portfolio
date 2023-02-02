@@ -64,7 +64,7 @@ const About = () => {
 							en alternance d'OpenClassrooms pour devenir
 							Développeur Frontend et commencer les cours HTML et
 							CSS qui m'ont tout de suite beaucoup plu. J'ai
-							préféré ainsi gardé les activités audivipsuels sur
+							préféré ainsi gardé mes activités audiovisuels sur
 							mon temps libre pour me mettre à plein temps sur
 							l'apprentissage du code. L'apprentissage de
 							JavaScript, bien que difficile le premier mois, m'a
@@ -95,7 +95,7 @@ const About = () => {
 							</span>
 						</Link>
 						<a
-							href="../public/assets/CV_Thibault-Guilhem.pdf"
+							href="./assets/CV_Thibault-Guilhem.pdf"
 							download
 							className="hover">
 							<span className="button">Télécharger le CV</span>
