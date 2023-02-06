@@ -51,10 +51,9 @@ const About = () => {
 							devenir géomètre bien que le métier ne me plaisait
 							pas tant que ça, surtout avec le temps.
 							<br />
-							Fin 2019, après 4 ans à exercer le métier (2 en
-							alternance, 2 à plein temps), j'ai décidé de prendre
-							du temps pour moi afin de trouver un métier qui me
-							plairais.
+							Après 4 ans à exercer le métier (2 en alternance, 2
+							à plein temps), j'ai décidé de prendre du temps pour
+							moi afin de trouver un métier qui me plairais.
 							<br />
 							<br />
 							Après plus de deux ans à tester des activités liés à
@@ -68,8 +67,7 @@ const About = () => {
 							mon temps libre pour me mettre à plein temps sur
 							l'apprentissage du code. L'apprentissage de
 							JavaScript, bien que difficile le premier mois, m'a
-							définitivement convaincu que j'ai enfin trouvé ma
-							voie.
+							définitivement convaincu d'avoir trouvé ma voie.
 							<br />
 							<br />
 							Je suis désormais à la recherche d'une entreprise
