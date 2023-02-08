@@ -72,7 +72,9 @@ const About = () => {
 							<br />
 							Je suis désormais à la recherche d'une entreprise
 							pour travailler avec elle dans le cadre d'une
-							alternance avec OpenClassrooms.
+							alternance avec OpenClassrooms, afin de perpétuer
+							mon apprentissage et le mettre en pratique dés que
+							possible.
 						</p>
 					</div>
 					<div className="skills card">

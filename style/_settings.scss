@@ -43,11 +43,7 @@ $red: rgb(253, 87, 87);
 }
 
 html {
-	scroll-behavior: unset;
-
-	::-webkit-scrollbar {
-		display: none;
-	}
+	scroll-behavior: smooth;
 }
 
 body {
