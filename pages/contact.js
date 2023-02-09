@@ -5,15 +5,22 @@ import ContactForm from '../components/ContactForm';
 import Meta from '../components/Meta';
 
 const Contact = () => {
-	const [copyText, setCopyText] = useState('');
+	const [textPhone, setTextPhone] = useState('');
+	const [textEmail, setTextEmail] = useState('');
 
-	const copyClipboard = (copyText, textAlert) => {
+	const copyClipboard = (e, copyText, textAlert) => {
 		navigator.clipboard.writeText(copyText);
-		setCopyText(textAlert);
-
-		setTimeout(() => {
-			document.querySelector('.contact-copy').textContent = '';
-		}, 2000);
+		if (e.target.id === 'phone') {
+			setTextPhone(textAlert);
+			setTimeout(() => {
+				setTextPhone('');
+			}, 2000);
+		} else if (e.target.id === 'email') {
+			setTextEmail(textAlert);
+			setTimeout(() => {
+				setTextEmail('');
+			}, 2000);
+		}
 	};
 
 	return (
@@ -33,8 +40,10 @@ const Contact = () => {
 							<p
 								style={{ cursor: 'pointer' }}
 								className="clipboard"
-								onClick={() =>
+								id="phone"
+								onClick={(e) =>
 									copyClipboard(
+										e,
 										'06 42 55 00 71',
 										'Téléphone copié !'
 									)
@@ -49,8 +58,10 @@ const Contact = () => {
 							<p
 								style={{ cursor: 'pointer' }}
 								className="clipboard"
-								onClick={() =>
+								id="email"
+								onClick={(e) =>
 									copyClipboard(
+										e,
 										'thibault.guilhem@gmail.com',
 										'Email copié !'
 									)
@@ -60,7 +71,8 @@ const Contact = () => {
 						</div>
 					</div>
 					<div className="contact-message">
-						<p className="contact-copy">{copyText && copyText}</p>
+						<p className="copy-phone">{textPhone && textPhone}</p>
+						<p className="copy-email">{textEmail && textEmail}</p>
 					</div>
 				</div>
 			</div>
