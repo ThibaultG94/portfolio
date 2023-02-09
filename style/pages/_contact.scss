@@ -3,10 +3,21 @@
 	width: 100vw;
 	height: 80vh;
 
+	&-container {
+		display: flex;
+		justify-content: space-around;
+		max-width: 90%;
+		margin: 0 auto;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+
 	.form-container {
 		margin: 2rem auto;
 		max-width: 650px;
-		width: 90vw;
+		width: 90%;
 		position: relative;
 		min-width: 250px;
 
@@ -20,17 +31,12 @@
 
 		.form-content {
 			background: white;
-			// display: grid;
-			// height: 80vh;
-			// grid-template-rows: (15%, 20%, 20%, 30%, 15%);
 			padding: 40px 45px 20px;
 			border-radius: 16px;
 			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 
 			@media screen and (max-width: 425px) {
 				padding: 30px 35px 20px;
-				// height: 85vh;
-				// grid-template-rows: (5%, 15%, 15%, 60%, 5%);
 			}
 
 			.name-container,
@@ -218,6 +224,119 @@
 
 		.error {
 			background: rgb(246, 147, 147);
+		}
+	}
+}
+
+.contact-infos {
+	padding: 15% 0 0 5%;
+	display: grid;
+	grid-template-rows: repeat(4, 23%) 12%;
+	height: 800px;
+	width: 30%;
+	max-width: 500px;
+
+	@media screen and (max-width: 1024px) {
+		height: 500px;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 5% 0 0 0;
+		height: 200px;
+		width: 100%;
+		max-width: 100%;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+			'a b c'
+			'd d d'
+			'e e f';
+	}
+	@media screen and (max-width: 540px) {
+		grid-template-rows: repeat(3, 60px);
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-areas:
+			'b b b c c c'
+			'd d d d d d'
+			'e e e e f f';
+	}
+
+	@media screen and (max-height: 500px) {
+		display: none;
+	}
+
+	@media screen and (max-width: 375px) {
+		margin-left: -20px;
+	}
+
+	h4 {
+		color: $color-4;
+		font-size: 1.3rem;
+		font-weight: 200;
+		margin-bottom: 10px;
+
+		@media screen and (min-width: 1200px) {
+			font-size: 1.8rem;
+		}
+	}
+	p {
+		@media screen and (min-width: 1200px) {
+			font-size: 1.5rem;
+		}
+	}
+	.email,
+	.phone {
+		@media screen and (max-height: 640px) {
+			display: none;
+		}
+	}
+	.email .content p,
+	.phone .content p {
+		transition: 0.25s;
+
+		&:hover {
+			transform: translateX(5px);
+		}
+	}
+
+	.address {
+		position: relative;
+
+		@media screen and (max-width: 540px) {
+			display: none;
+		}
+		.content {
+			position: absolute;
+			right: 10px;
+		}
+	}
+	.phone {
+		position: relative;
+
+		@media screen and (max-width: 540px) {
+			text-align: center;
+			font-size: 0.8rem;
+			grid-area: b;
+		}
+
+		.content {
+			position: absolute;
+			left: 40%;
+			transform: translateX(-50%);
+
+			@media screen and (max-width: 540px) {
+				position: relative;
+				margin: 0 auto;
+				left: 0;
+				transform: translateX(0);
+			}
+		}
+	}
+	.email {
+		@media screen and (max-width: 540px) {
+			grid-area: c;
+			font-size: 0.8rem;
+			text-align: center;
 		}
 	}
 }
