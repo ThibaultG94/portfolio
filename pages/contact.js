@@ -1,12 +1,19 @@
+import { useState } from 'react';
 import ArrowKey from '../components/ArrowKey';
 import Buttons from '../components/Buttons';
 import ContactForm from '../components/ContactForm';
 import Meta from '../components/Meta';
 
 const Contact = () => {
+	const [copyText, setCopyText] = useState('');
+
 	const copyClipboard = (copyText, textAlert) => {
 		navigator.clipboard.writeText(copyText);
-		alert(textAlert);
+		setCopyText(textAlert);
+
+		setTimeout(() => {
+			document.querySelector('.contact-copy').textContent = '';
+		}, 2000);
 	};
 
 	return (
@@ -51,6 +58,9 @@ const Contact = () => {
 								thibault.guilhem@gmail.com
 							</p>
 						</div>
+					</div>
+					<div className="contact-message">
+						<p className="contact-copy">{copyText && copyText}</p>
 					</div>
 				</div>
 			</div>
