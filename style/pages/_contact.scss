@@ -252,6 +252,7 @@
 			'd d d'
 			'e e f';
 	}
+
 	@media screen and (max-width: 540px) {
 		grid-template-rows: repeat(3, 60px);
 		grid-template-columns: repeat(6, 1fr);
@@ -279,17 +280,20 @@
 			font-size: 1.8rem;
 		}
 	}
+
 	p {
 		@media screen and (min-width: 1200px) {
 			font-size: 1.5rem;
 		}
 	}
+
 	.email,
 	.phone {
 		@media screen and (max-height: 640px) {
 			display: none;
 		}
 	}
+
 	.email .content p,
 	.phone .content p {
 		transition: 0.25s;
@@ -305,11 +309,13 @@
 		@media screen and (max-width: 540px) {
 			display: none;
 		}
+
 		.content {
 			position: absolute;
 			right: 10px;
 		}
 	}
+
 	.phone {
 		position: relative;
 
@@ -332,6 +338,7 @@
 			}
 		}
 	}
+
 	.email {
 		@media screen and (max-width: 540px) {
 			grid-area: c;
