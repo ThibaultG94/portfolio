@@ -11,7 +11,7 @@ nav {
 }
 
 .nav-link {
-	padding: 27px 30px;
+	padding: 33px 30px;
 	font-size: 1rem;
 	color: #333;
 	text-transform: uppercase;
@@ -19,17 +19,17 @@ nav {
 	font-weight: 700;
 
 	@media screen and (max-width: 1024px) {
-		padding: 25px 20px;
+		padding: 28px 20px;
 		font-size: 0.9rem;
 	}
 
 	@media screen and (max-width: 800px) {
-		padding: 25px 18px;
+		padding: 28px 18px;
 		font-size: 0.8rem;
 	}
 
 	@media screen and (max-width: 768px) {
-		padding: 22px 15px;
+		padding: 26px 15px 24px;
 		font-size: 0.7rem;
 	}
 

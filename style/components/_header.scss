@@ -6,14 +6,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 10px 50px;
+		padding: 5px 50px;
 
 		@media screen and (max-width: 1024px) {
-			padding: 9px 40px;
+			padding: 5px 40px;
 		}
 
 		@media screen and (max-width: 768px) {
-			padding: 8px 30px;
+			padding: 5px 30px;
 		}
 
 		@media screen and (max-width: 700px) {
@@ -35,27 +35,43 @@
 				font-size: 0.9rem;
 			}
 
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 828px) {
 				font-size: 0.8rem;
 			}
 		}
 	}
 
 	&-logo-img {
-		border-radius: 50px;
+		border-radius: 40px;
 		overflow: hidden;
-		width: 50px;
-		height: 50px;
+		width: 70px;
+		height: 70px;
 		margin-right: 15px;
 
 		@media screen and (max-width: 1024px) {
-			width: 45px;
-			height: 45px;
+			width: 60px;
+			height: 60px;
 		}
 
 		@media screen and (max-width: 768px) {
-			width: 40px;
-			height: 40px;
+			width: 50px;
+			height: 50px;
+		}
+
+		& img {
+			transform: translateY(-10px);
+
+			@media screen and (max-width: 1024px) {
+				transform: translate(0px, -7px);
+				width: 60px;
+				height: 83px;
+			}
+
+			@media screen and (max-width: 768px) {
+				transform: translate(0px, -5px);
+				width: 50px;
+				height: 69px;
+			}
 		}
 	}
 }
