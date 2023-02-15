@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import GoogleScript from "../components/GoogleScript";
 
 export default function Document() {
   return (
@@ -13,7 +12,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <GoogleScript />
       </body>
     </Html>
   );
