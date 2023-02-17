@@ -64,7 +64,11 @@ const project = ({ project }) => {
 				</div>
 			</div>
 			<Buttons
-				left={project.id === 1 ? '/' : '/projects/' + (project.id - 1)}
+				left={
+					project.id === 1
+						? '/about'
+						: '/projects/' + (project.id - 1)
+				}
 				right={
 					(project.id === 4) | (project.id === 13)
 						? '/portfolio'
