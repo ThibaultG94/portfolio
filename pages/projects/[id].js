@@ -70,7 +70,7 @@ const project = ({ project }) => {
 						: '/projects/' + (project.id - 1)
 				}
 				right={
-					(project.id === 4) | (project.id === 13)
+					(project.id === 4) | (project.id === 11)
 						? '/portfolio'
 						: '/projects/' + (project.id + 1)
 				}
