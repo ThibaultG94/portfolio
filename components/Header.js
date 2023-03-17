@@ -13,6 +13,7 @@ const Header = () => {
 							width={70}
 							height={97}
 							loading="eager"
+							priority
 						/>
 					</div>
 					<span>Thibault Guilhem</span>
