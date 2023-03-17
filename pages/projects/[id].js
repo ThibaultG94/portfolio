@@ -6,9 +6,16 @@ import Meta from '../../components/Meta';
 import { path } from '../../config';
 import { projects } from '../../projectsData';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const project = ({ project }) => {
+	const router = useRouter();
+
+	useEffect(() => {
+		router.beforePopState(() => true);
+	}, [router]);
+
 	const variants = {
 		initial: {
 			opacity: 0,
@@ -50,6 +57,7 @@ const project = ({ project }) => {
 				title={`Projet ${project.title} - Thibault Guilhem - Développeur Web Frontend`}
 			/>
 			<motion.div
+				key={router.query.id}
 				className="project-main"
 				initial="initial"
 				animate="visible"
