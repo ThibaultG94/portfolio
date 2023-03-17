@@ -35,73 +35,67 @@ const Contact = () => {
 	};
 
 	return (
-		<AnimatePresence mode="wait">
+		<div className="contact">
+			<Meta />
 			<motion.div
 				initial="out"
 				animate="in"
 				exit="out"
 				variants={pageTransition}
 				transition={{ duration: 0.5 }}
-				className="contact">
-				<Meta />
-				<div className="contact-container">
-					<ContactForm />
-					<div className="contact-infos">
-						<div className="address">
-							<h4>addresse</h4>
-							<p>54 Clos des Cascades</p>
-							<p>93160 Noisy-le-Grand</p>
-						</div>
-						<div className="phone">
-							<div className="content">
-								<h4>téléphone</h4>
-								<p
-									style={{ cursor: 'pointer' }}
-									className="clipboard"
-									id="phone"
-									onClick={(e) =>
-										copyClipboard(
-											e,
-											'06 42 55 00 71',
-											'Téléphone copié !'
-										)
-									}>
-									06 42 55 00 71
-								</p>
-							</div>
-						</div>
-						<div className="email">
-							<div className="content">
-								<h4>email</h4>
-								<p
-									style={{ cursor: 'pointer' }}
-									className="clipboard"
-									id="email"
-									onClick={(e) =>
-										copyClipboard(
-											e,
-											'thibault.guilhem@gmail.com',
-											'Email copié !'
-										)
-									}>
-									thibault.guilhem@gmail.com
-								</p>
-							</div>
-						</div>
-						<div className="contact-message">
-							<p className="copy-phone">
-								{textPhone && textPhone}
-							</p>
-							<p className="copy-email">
-								{textEmail && textEmail}
+				className="contact-container">
+				<ContactForm />
+				<div className="contact-infos">
+					<div className="address">
+						<h4>addresse</h4>
+						<p>54 Clos des Cascades</p>
+						<p>93160 Noisy-le-Grand</p>
+					</div>
+					<div className="phone">
+						<div className="content">
+							<h4>téléphone</h4>
+							<p
+								style={{ cursor: 'pointer' }}
+								className="clipboard"
+								id="phone"
+								onClick={(e) =>
+									copyClipboard(
+										e,
+										'06 42 55 00 71',
+										'Téléphone copié !'
+									)
+								}>
+								06 42 55 00 71
 							</p>
 						</div>
 					</div>
+					<div className="email">
+						<div className="content">
+							<h4>email</h4>
+							<p
+								style={{ cursor: 'pointer' }}
+								className="clipboard"
+								id="email"
+								onClick={(e) =>
+									copyClipboard(
+										e,
+										'thibault.guilhem@gmail.com',
+										'Email copié !'
+									)
+								}>
+								thibault.guilhem@gmail.com
+							</p>
+						</div>
+					</div>
+					<div className="contact-message">
+						<p className="copy-phone">{textPhone && textPhone}</p>
+						<p className="copy-email">{textEmail && textEmail}</p>
+					</div>
 				</div>
-				<Buttons left={'/portfolio'} />
-				<ArrowKey />
 			</motion.div>
-		</AnimatePresence>
+			<Buttons left={'/portfolio'} />
+			<ArrowKey />
+		</div>
 	);
 };
 
