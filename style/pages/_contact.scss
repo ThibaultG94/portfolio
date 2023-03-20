@@ -1,8 +1,11 @@
 .contact {
 	position: relative;
-	width: 100vw;
-	height: 80vh;
-	overflow: hidden;
+	width: 98vw;
+	min-height: 100vh;
+
+	@media screen and (max-height: 500px) {
+		overflow: hidden;
+	}
 
 	&-container {
 		display: flex;
