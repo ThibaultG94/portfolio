@@ -3,12 +3,29 @@ import ArrowKey from '../components/ArrowKey';
 import Buttons from '../components/Buttons';
 import Meta from '../components/Meta';
 import NextTyped from '../components/NextTyped';
+import { motion } from 'framer-motion';
 
 const index = () => {
+	const titleTransition = {
+		in: {
+			opacity: 1,
+			y: 0,
+		},
+		out: {
+			opacity: 0,
+			y: -60,
+		},
+	};
 	return (
 		<div className="home">
 			<Meta />
-			<div className="home-main">
+			<motion.div
+				className="home-main"
+				initial="out"
+				animate="in"
+				exit="out"
+				variants={titleTransition}
+				transition={{ duration: 0.5 }}>
 				<div className="main-content">
 					<h1>Thibault Guilhem</h1>
 					<div className="line"></div>
@@ -17,7 +34,7 @@ const index = () => {
 						<NextTyped />
 					</div>
 				</div>
-			</div>
+			</motion.div>
 			<Buttons right={'/about'} />
 			<ArrowKey />
 		</div>

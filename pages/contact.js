@@ -3,7 +3,7 @@ import ArrowKey from '../components/ArrowKey';
 import Buttons from '../components/Buttons';
 import ContactForm from '../components/ContactForm';
 import Meta from '../components/Meta';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
 	const [textPhone, setTextPhone] = useState('');

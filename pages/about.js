@@ -5,6 +5,7 @@ import Meta from '../components/Meta';
 import Cloud from '../components/Cloud';
 import Hobbies from '../components/Hobbies';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 const About = () => {
 	const myBirthDate = '08/20/1994';
@@ -25,13 +26,90 @@ const About = () => {
 		setAge(getAge(myBirthDate));
 	}, []);
 
+	const titleTransition = {
+		in: {
+			opacity: 1,
+		},
+		out: {
+			opacity: 0,
+		},
+	};
+
+	const infosCardTransition = {
+		in: {
+			opacity: 1,
+			x: 0,
+		},
+		out: {
+			opacity: 0,
+			x: -200,
+		},
+	};
+
+	const skillCardTransition = {
+		in: {
+			opacity: 1,
+			x: 0,
+		},
+		out: {
+			opacity: 0,
+			x: 200,
+		},
+	};
+
+	const hobbieCardTransition = {
+		in: {
+			opacity: 1,
+			y: 0,
+		},
+		out: {
+			opacity: 0,
+			y: 200,
+		},
+	};
+
+	const firstButtonTransition = {
+		in: {
+			opacity: 1,
+			x: 0,
+		},
+		out: {
+			opacity: 0,
+			x: -200,
+		},
+	};
+
+	const secondButtonTransition = {
+		in: {
+			opacity: 1,
+			x: 0,
+		},
+		out: {
+			opacity: 0,
+			x: 200,
+		},
+	};
+
 	return (
 		<div className="about">
 			<Meta />
 			<div className="about-container">
-				<h1>À propos</h1>
+				<motion.h1
+					initial="out"
+					animate="in"
+					exit="out"
+					variants={titleTransition}
+					transition={{ duration: 1.5, delay: 0.5 }}>
+					À propos
+				</motion.h1>
 				<div className="about-content">
-					<div className="infos card">
+					<motion.div
+						className="infos card"
+						initial="out"
+						animate="in"
+						exit="out"
+						variants={infosCardTransition}
+						transition={{ duration: 0.5 }}>
 						<p>
 							<em>Prénom: </em> <strong>Thibault</strong>
 							<br />
@@ -76,30 +154,53 @@ const About = () => {
 							mon apprentissage et le mettre en pratique dés que
 							possible.
 						</p>
-					</div>
-					<div className="skills card">
+					</motion.div>
+					<motion.div
+						className="skills card"
+						initial="out"
+						animate="in"
+						exit="out"
+						variants={skillCardTransition}
+						transition={{ duration: 0.5 }}>
 						<Cloud />
-					</div>
-					<div className="hobbies card">
+					</motion.div>
+					<motion.div
+						className="hobbies card"
+						initial="out"
+						animate="in"
+						exit="out"
+						variants={hobbieCardTransition}
+						transition={{ duration: 0.5 }}>
 						<Hobbies />
-					</div>
+					</motion.div>
 					<div className="button-container">
 						<Link
 							href={'https://github.com/ThibaultG94/portfolio'}
 							target="_blank"
 							rel="noopener noreferrer"
 							className="hover">
-							<span className="button">
+							<motion.span
+								className="button"
+								initial="out"
+								animate="in"
+								exit="out"
+								variants={firstButtonTransition}
+								transition={{ duration: 0.5 }}>
 								voir le code source du site portfolio
 								<i className="fa-brands fa-github"></i>
-							</span>
+							</motion.span>
 						</Link>
-						<a
+						<motion.a
 							href="./assets/CV_Thibault-Guilhem.pdf"
 							download
-							className="hover">
+							className="hover"
+							initial="out"
+							animate="in"
+							exit="out"
+							variants={secondButtonTransition}
+							transition={{ duration: 0.5 }}>
 							<span className="button">Télécharger le CV</span>
-						</a>
+						</motion.a>
 					</div>
 				</div>
 			</div>
