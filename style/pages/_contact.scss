@@ -3,7 +3,11 @@
 	width: 98vw;
 	min-height: 50vh;
 
-	@media screen and (max-height: 600px) {
+	@media screen and (max-height: 700px) {
+		overflow: hidden;
+	}
+
+	@media screen and (max-width: 500px) {
 		overflow: hidden;
 	}
 
