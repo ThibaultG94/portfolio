@@ -6,11 +6,33 @@ import { projects } from '../projectsData';
 import { path } from '../config';
 import ArrowKey from '../components/ArrowKey';
 import Buttons from '../components/Buttons';
+import { motion } from 'framer-motion';
 
 const Portfolio = () => {
 	useEffect(() => {
 		localStorage.projects = true;
 	}, []);
+
+	const cardsTransition = {
+		in: {
+			opacity: 1,
+		},
+		out: {
+			opacity: 0,
+		},
+	};
+
+	const titleTransition = {
+		in: {
+			opacity: 1,
+			y: 0,
+		},
+		out: {
+			opacity: 0,
+			y: 100,
+		},
+	};
+
 	return (
 		<div className="portfolio">
 			<Meta
@@ -18,10 +40,27 @@ const Portfolio = () => {
 			// description={'Tous les projets dev mis en ligne'}
 			/>
 			<div className="porfolio-main">
-				<h1>Mon Portfolio</h1>
+				<motion.h1
+					initial="out"
+					animate="in"
+					exit="out"
+					variants={titleTransition}
+					transition={{ duration: 1 }}>
+					Mon Portfolio
+				</motion.h1>
 				<ul className="portfolio-container">
 					{projects.map((project) => (
-						<li key={project.id} className="portfolio-content">
+						<motion.li
+							key={project.id}
+							className="portfolio-content"
+							initial="out"
+							animate="in"
+							exit="out"
+							variants={cardsTransition}
+							transition={{
+								duration: Math.round(Math.random() * 2) + 0.3,
+								delay: Math.round(Math.random() * 2),
+							}}>
 							<span>
 								<h3>{project.title}</h3>
 								<ul className="langages">
@@ -47,7 +86,7 @@ const Portfolio = () => {
 									loading="eager"
 								/>
 							</Link>
-						</li>
+						</motion.li>
 					))}
 				</ul>
 			</div>
