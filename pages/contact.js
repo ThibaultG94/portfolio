@@ -47,7 +47,7 @@ const Contact = () => {
 				<ContactForm />
 				<div className="contact-infos">
 					<div className="address">
-						<h4>addresse</h4>
+						<h4>adresse</h4>
 						<p>54 Clos des Cascades</p>
 						<p>93160 Noisy-le-Grand</p>
 					</div>

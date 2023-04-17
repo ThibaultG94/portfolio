@@ -122,19 +122,33 @@ const About = () => {
 							<strong>Noisy-le-Grand</strong>
 							<br />
 							<br />
-							Sorti d'un Bac S, il m'a fallu de longues années
+							{/* Sorti d'un Bac S, il m'a fallu de longues années
 							pour trouver ma voie. D'abord une année à la fac,
 							puis une année en paysagiste qui ne m'a pas plus.
 							Lassé de changer d'orientation, j'ai fini par
 							devenir géomètre bien que le métier ne me plaisait
-							pas tant que ça, surtout avec le temps.
-							<br />
+							pas tant que ça, surtout avec le temps. */}
+							Après avoir obtenu mon baccalauréat scientifique,
+							j'ai exploré différentes voies, notamment
+							l'université et le paysagisme, sans trouver de
+							réelle satisfaction. J'ai finalement opté pour une
+							carrière de géomètre durant quatre années, mais là
+							encore, ce métier ne me passionnait pas. Suite à
+							celà, j'ai décidé de prendre une pause pour
+							réfléchir à mon avenir professionnel et explorer
+							d'autres pistes. C'est à ce moment que j'ai
+							expérimenté divers domaines liés à l'audiovisuel,
+							tels que la 3D, la stop motion et le montage vidéo.
+							Bien que ces activités aient réellement suscité mon
+							intérêt, elles ne représentaient pas des options
+							viables pour moi.
+							{/* <br />
 							Après 4 ans à exercer le métier (2 en alternance, 2
 							à plein temps), j'ai décidé de prendre du temps pour
-							moi afin de trouver un métier qui me plairais.
+							moi afin de trouver un métier qui me plairais. */}
 							<br />
 							<br />
-							Après plus de deux ans à tester des activités liés à
+							{/* Après plus de deux ans à tester des activités liés à
 							l'audivisuel (3D, Stop Motion, Montage) trop
 							compliquées à aboutir économiquement sur le
 							court-terme, j'ai finalement découvert la formation
@@ -145,14 +159,31 @@ const About = () => {
 							mon temps libre pour me mettre à plein temps sur
 							l'apprentissage du code. L'apprentissage de
 							JavaScript, bien que difficile le premier mois, m'a
-							définitivement convaincu d'avoir trouvé ma voie.
+							définitivement convaincu d'avoir trouvé ma voie. */}
+							C'est alors que j'ai découvert la formation en
+							alternance d'OpenClassrooms pour devenir Développeur
+							Frontend. Les premiers cours en HTML et CSS m'ont
+							immédiatement captivé, et j'ai décidé de me
+							consacrer pleinement à l'apprentissage du code tout
+							en gardant mes activités audiovisuelles comme
+							passe-temps. L'étude du JavaScript, bien que
+							difficile au début, m'a conforté dans mon choix de
+							carrière.
 							<br />
 							<br />
-							Je suis désormais à la recherche d'une entreprise
+							{/* Je suis désormais à la recherche d'une entreprise
 							pour travailler avec elle dans le cadre d'une
 							alternance avec OpenClassrooms, afin de perpétuer
 							mon apprentissage et le mettre en pratique dés que
-							possible.
+							possible. */}
+							Je suis actuellement à la recherche d'une entreprise
+							qui m'accueillera en alternance avec OpenClassrooms.
+							Mon objectif est de poursuivre mon apprentissage et
+							de mettre en pratique mes compétences dans le
+							développement web dès que possible. Je suis
+							convaincu que cette nouvelle voie me permettra de
+							m'épanouir professionnellement et de contribuer de
+							manière significative à mon futur employeur.
 						</p>
 					</motion.div>
 					<motion.div
