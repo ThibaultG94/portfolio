@@ -195,7 +195,7 @@ const About = () => {
 							</motion.span>
 						</Link>
 						<motion.a
-							href="./assets/CV_Thibault-Guilhem.pdf"
+							href="./assets/CV_Guilhem_Thibault.pdf"
 							download
 							className="hover"
 							initial="out"
