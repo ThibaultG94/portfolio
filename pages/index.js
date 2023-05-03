@@ -29,7 +29,7 @@ const index = () => {
 				<div className="main-content">
 					<h1>Thibault Guilhem</h1>
 					<div className="line"></div>
-					<h2>Développeur Front-end</h2>
+					<h2>Développeur Web</h2>
 					<div className="typed-container">
 						<NextTyped />
 					</div>
