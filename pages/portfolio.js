@@ -58,8 +58,8 @@ const Portfolio = () => {
 							exit="out"
 							variants={cardsTransition}
 							transition={{
-								duration: Math.round(Math.random() * 2) + 0.3,
-								delay: Math.round(Math.random()),
+								duration: Math.round(Math.random() * 2) + 0.1,
+								delay: Math.round(Math.random() / 3),
 							}}>
 							<span>
 								<h3>{project.title}</h3>
