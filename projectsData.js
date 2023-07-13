@@ -9,7 +9,7 @@ export const projects = [
 			'../assets/img/sass.png',
 		],
 		infos: 'Site portfolio personnel codé avec NextJs',
-		img: '/assets/img/projet-react-13.jpg',
+		img: '/assets/img/projet-projet-13.jpg',
 		link: 'https://portfolio-thibaultg94.vercel.app/',
 		github: 'https://github.com/ThibaultG94/portfolio',
 	},
