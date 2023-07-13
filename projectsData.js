@@ -2,7 +2,7 @@ export const projects = [
 	{
 		id: 1,
 		title: 'Next Portfolio',
-		date: 'Janvier 2023',
+		date: 'Février 2023',
 		languages: ['../assets/img/next-js.svg', '../assets/img/sass.png'],
 		infos: 'Site portfolio personnel codé avec NextJs',
 		img: '/assets/img/projet-13.jpg',
