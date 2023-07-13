@@ -1,6 +1,20 @@
 export const projects = [
 	{
 		id: 1,
+		title: 'Next Portfolio',
+		date: 'Janvier 2023',
+		languages: [
+			'../assets/img/next-js.svg',
+			'../assets/img/react.png',
+			'../assets/img/sass.png',
+		],
+		infos: 'Site portfolio personnel codé avec NextJs',
+		img: '/assets/img/projet-react-13.jpg',
+		link: 'https://portfolio-thibaultg94.vercel.app/',
+		github: 'https://github.com/ThibaultG94/portfolio',
+	},
+	{
+		id: 2,
 		title: 'Movies App',
 		date: 'Novembre 2022',
 		languages: [
@@ -14,7 +28,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/react-movies',
 	},
 	{
-		id: 2,
+		id: 3,
 		title: 'Yoga App',
 		date: 'Octobre 2022',
 		languages: [
@@ -28,7 +42,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/Yoga-routine_POO',
 	},
 	{
-		id: 3,
+		id: 4,
 		title: 'Quiz',
 		date: 'Octobre 2022',
 		languages: [
@@ -42,7 +56,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/TP10--Quizz',
 	},
 	{
-		id: 4,
+		id: 5,
 		title: 'Portfolio Bootstrap',
 		date: 'Octobre 2022',
 		languages: [
@@ -56,7 +70,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/Projet-Bootstrap_5',
 	},
 	{
-		id: 5,
+		id: 6,
 		title: 'Vitrine Helium',
 		date: 'Septembre 2022',
 		languages: [
@@ -70,7 +84,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/Projet_3-Integration_Helium',
 	},
 	{
-		id: 6,
+		id: 7,
 		title: 'Date Calculator',
 		date: 'Septembre 2022',
 		languages: [
@@ -84,7 +98,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/TP8--Date_Calculator',
 	},
 	{
-		id: 7,
+		id: 8,
 		title: 'Vitrine Le Resto',
 		date: 'Août 2022',
 		languages: ['../assets/img/sass.png', '../assets/img/html.png'],
@@ -94,7 +108,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/Projet_2-Integration_Le_Resto',
 	},
 	{
-		id: 8,
+		id: 9,
 		title: 'Vitrine Montagne',
 		date: 'Juillet 2022',
 		languages: ['../assets/img/sass.png', '../assets/img/html.png'],
@@ -104,7 +118,7 @@ export const projects = [
 		github: 'https://github.com/ThibaultG94/Projet_1-Int-gration_La_Montagne',
 	},
 	{
-		id: 9,
+		id: 10,
 		title: 'Bubble Game',
 		date: 'Aout 2022',
 		languages: [
